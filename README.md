@@ -6,6 +6,8 @@ A static site (plain HTML, no build step). Everything lives in `index.html`, wit
 
 - `index.html` is the whole site
 - `images/` holds the logos, headshot and photos
+- `insights/` holds the articles. Each one lives in its own folder as `index.html`
+- `assets/site.css` is the stylesheet the article pages share
 - `favicon.png` is the browser tab icon
 - `llms.txt`, `robots.txt` and `sitemap.xml` are for search engines and AI tools
 - `vercel.json` sets caching and security headers
@@ -52,6 +54,14 @@ The site already has the basics in place: a canonical URL, a sitemap, robots.txt
 5. In Vercel, make sure `www.syedco.com` redirects to `syedco.com`, so Google only sees one version of the site.
 
 New sites usually take a few days to a few weeks to show up. Searching your own name is the first thing that will work. Ranking for broader searches takes more pages and links over time.
+
+## Adding a new article
+
+1. Copy one of the folders inside `insights/` and rename it. The folder name becomes the web address, so keep it short and lowercase with hyphens (for example `insights/my-new-article/`).
+2. Open its `index.html` and change the title, description, canonical address (the `<link rel="canonical">` line), the dates in the structured data, and the article text.
+3. Add a card for it to `insights/index.html` and the "Insights" section of the main `index.html`.
+4. Add the new address to `sitemap.xml` and `llms.txt`.
+5. Commit to GitHub. After it deploys, paste the new address into Google Search Console's URL Inspection and click Request indexing.
 
 ## Making changes later
 

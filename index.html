@@ -237,6 +237,11 @@
   .card h3{font-size:22px; font-weight:800; margin-bottom:10px; line-height:1.25;}
   .card p{color:var(--ink-2); font-size:15px; line-height:1.75; font-weight:500;}
 
+  a.card{display:block; text-decoration:none; color:inherit;}
+  .card .tag{font-size:11px; font-weight:800; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent); display:block; margin-bottom:14px;}
+  .card .more{display:inline-block; margin-top:18px; font-size:14px; font-weight:800; color:var(--accent);}
+  .cards.two{grid-template-columns:repeat(2,1fr);}
+  @media (max-width:700px){.cards.two{grid-template-columns:1fr;}}
   /* process */
   .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:34px; margin-top:54px;}
   @media (max-width:860px){.steps{grid-template-columns:1fr;}}
@@ -344,6 +349,7 @@
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#help">How I Help</a>
+      <a href="/insights/">Insights</a>
       <a href="#contact">Contact</a>
     </div>
     <a class="nav-cta" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn</a>
@@ -476,6 +482,18 @@
 
 
 
+<section id="insights">
+  <div class="wrap">
+    <div class="label reveal">Insights</div>
+    <h2 class="title display reveal" style="--d:80ms">Practical thinking, in plain English.</h2>
+    <p class="sub reveal" style="--d:160ms">Short reads on the problems that come up most often.</p>
+    <div class="cards two">
+      <a class="card reveal" style="--d:0ms" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:90ms" href="/insights/why-sales-stalled/"><span class="tag">Sales</span><h3>Why sales stalled, and where to look first</h3><p>Before you hire, discount or panic, spend 30 minutes finding where deals are actually falling off. A simple way to diagnose a sales slump.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:180ms" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:270ms" href="/insights/how-to-launch-a-product-in-canada/"><span class="tag">Launches</span><h3>How to launch a product in Canada</h3><p>A launch is not an announcement. A simple three-phase plan for launching a product in Canada that builds demand before launch day and keeps it going after.</p><span class="more">Read the article →</span></a>
+    </div>
+    <p class="reveal" style="margin-top:34px"><a class="link" href="/insights/">See all insights →</a></p>
+  </div>
+</section>
+
 <section class="alt" id="gallery">
   <div class="wrap">
     <div class="label reveal">Out And About</div>
@@ -549,6 +567,7 @@
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <a href="#help">How I Help</a>
+        <a href="/insights/">Insights</a>
         <a href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>

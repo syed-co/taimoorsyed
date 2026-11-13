@@ -1,6 +1,6 @@
 # Syed Co.
 
-> Syed Co. is the personal site of Taimoor Syed, an investor, consultant and entrepreneur based in Vancouver, BC. He helps Canadian organizations work out what is holding back their sales and marketing, and who is best placed to fix it. That is sometimes himself and often someone in his network.
+> Syed Co. is the personal site of Taimoor Syed, an investor, consultant and entrepreneur based in Vancouver, BC. He helps Canadian organizations work out what is holding back their sales and marketing, and who is best placed to fix it. Sometimes that is himself and often someone in his network.
 
 ## About Taimoor Syed
 
@@ -8,9 +8,16 @@
 - Has worked with 50+ Canadian organizations across agriculture, CPG, restaurants, healthcare, government, associations, software and service-based businesses
 - Works with scaling organizations across Canada
 
-## Pages
+## Services
 
-- [Home](https://syedco.com/): overview, areas of help, experience, and contact form
+- [Website design](https://syedco.com/services/website-design/): Custom website design and development for Canadian organizations, planned around what visitors need to do and what your business needs them to do.
+- [Brand strategy](https://syedco.com/services/brand-strategy/): Brand strategy and positioning for Canadian organizations: who you’re for, what makes you different and how to say it so your market remembers.
+- [Marketing campaign strategy](https://syedco.com/services/campaign-strategy/): Marketing campaign strategy and planning for Canadian organizations: awareness, launch, growth, event and rebrand campaigns built around one clear objective.
+- [Go-to-market strategy](https://syedco.com/services/go-to-market-strategy/): Go-to-market strategy for new products, services and markets in Canada: customers, positioning, channels and a three-phase launch plan.
+- [Marketing audit](https://syedco.com/services/marketing-audit/): A marketing audit for Canadian organizations: a clear review of your goals, channels, website and spend, with a prioritized 90-day action plan.
+- [Fractional marketing leadership](https://syedco.com/services/fractional-marketing-leadership/): Fractional marketing leadership for Canadian organizations: senior strategy, budget and team direction without a full-time executive hire.
+- [Video and photo production](https://syedco.com/services/video-and-photo-production/): Brand video, product photography, event coverage and social content for Canadian organizations, planned around a goal so every shot has a purpose.
+- [Sales process setup](https://syedco.com/services/sales-process-setup/): Sales process setup and coaching for Canadian organizations: map your funnel, find where deals leak and build a repeatable process your team can follow.
 
 ## Insights
 
@@ -19,6 +26,11 @@
 - [Why sales stalled, and where to look first](https://syedco.com/insights/why-sales-stalled/): Before you hire, discount or panic, spend 30 minutes finding where deals are actually falling off. A simple way to diagnose a sales slump.
 - [Agency, freelancer, in-house or fractional: how to choose](https://syedco.com/insights/agency-freelancer-in-house-or-fractional/): There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.
 - [How to launch a product in Canada](https://syedco.com/insights/how-to-launch-a-product-in-canada/): A launch is not an announcement. A simple three-phase plan for launching a product in Canada that builds demand before launch day and keeps it going after.
+- [A marketing audit checklist: 15 questions to ask about your own marketing](https://syedco.com/insights/marketing-audit-checklist/): Fifteen plain questions that show whether your marketing has a clear goal, a consistent message and numbers you can trust. Do it yourself in an afternoon.
+- [Brand strategy vs brand identity: what’s the difference?](https://syedco.com/insights/brand-strategy-vs-brand-identity/): Brand strategy is the thinking, brand identity is how it looks. Why the order matters, and what each one includes before you hire a designer.
+- [What affects the cost of a website (and how to budget for one)](https://syedco.com/insights/what-affects-the-cost-of-a-website/): The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.
+- [What is a marketing campaign (and what isn’t)?](https://syedco.com/insights/what-is-a-marketing-campaign/): A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.
+- [How to plan a brand video or photo shoot (and get content you can use)](https://syedco.com/insights/how-to-plan-a-brand-video-or-photo-shoot/): A practical guide to planning brand video and photography: start with the goal, build the shot list around it, prepare on the day and plan where it will live.
 
 ## Contact
 

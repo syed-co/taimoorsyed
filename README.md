@@ -6,8 +6,10 @@ A static site (plain HTML, no build step). Everything lives in `index.html`, wit
 
 - `index.html` is the whole site
 - `images/` holds the logos, headshot and photos
+- `services/` holds the services overview and one page for each service. Every page has the contact form, and each submission is tagged with the service and the page it came from
+- `assets/form.js` runs the contact form on every page
 - `insights/` holds the articles. Each one lives in its own folder as `index.html`
-- `assets/site.css` is the stylesheet the article pages share
+- `assets/site.css` is the master copy of the shared styles. The Services and Insights pages carry a copy of it inside each page, so they still look right on their own
 - `favicon.png` is the browser tab icon
 - `llms.txt`, `robots.txt` and `sitemap.xml` are for search engines and AI tools
 - `vercel.json` sets caching and security headers
@@ -19,7 +21,7 @@ The form is already wired up. It just needs your Formspree form ID.
 1. Go to formspree.io and make a free account.
 2. Click **New Form**, name it something like "Syed Co. contact", and set the email to `taimoor@syedco.com`.
 3. Formspree gives you a form URL that looks like `https://formspree.io/f/abcdwxyz`. Copy it.
-4. Open `index.html` and search for `YOUR_FORM_ID`. Replace it with the ID from your URL (the part after `/f/`). There is only one place to change.
+4. Open `assets/form.js` and replace `YOUR_FORM_ID` near the top with the ID from your URL (the part after `/f/`). That one file runs the form on every page, so there's only one place to change.
 5. Submit one test message from the live site. Formspree will email you to confirm the address the first time, so check your inbox.
 
 Until the ID is added, the form falls back to opening a pre-filled email, so nothing breaks in the meantime.
@@ -62,6 +64,10 @@ New sites usually take a few days to a few weeks to show up. Searching your own 
 3. Add a card for it to `insights/index.html` and the "Insights" section of the main `index.html`.
 4. Add the new address to `sitemap.xml` and `llms.txt`.
 5. Commit to GitHub. After it deploys, paste the new address into Google Search Console's URL Inspection and click Request indexing.
+
+## Adding or editing a service page
+
+Each service lives in its own folder inside `services/` as `index.html`. To add one, copy a folder, rename it, change the title, description, canonical address, structured data and text, then add a card for it on `services/index.html` and the homepage, and add the address to `sitemap.xml` and `llms.txt`.
 
 ## Making changes later
 

@@ -18,7 +18,7 @@
 <meta property="og:image" content="https://syedco.com/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Taimoor Syed, sales and marketing answers for Canadian organizations">
+<meta property="og:image:alt" content="Taimoor Syed, sales and marketing strategy for Canadian organizations">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Taimoor Syed | Sales &amp; Marketing Consultant in Canada">
 <meta name="twitter:description" content="Investor, consultant and entrepreneur Taimoor Syed helps Canadian organizations solve sales and marketing problems. 10+ years of experience. Vancouver, BC.">
@@ -155,7 +155,7 @@
   .btn-line:hover{border-color:var(--dk-accent); background:rgba(201,185,138,0.08);}
 
   /* hero */
-  .hero{position:relative; background:var(--dk); color:var(--dk-ink); padding:96px 0 90px; overflow:hidden;}
+  .hero{position:relative; background:var(--dk); color:var(--dk-ink); padding:52px 0 84px; overflow:hidden;}
   .hero::before{content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px); background-size:52px 52px; mask-image:radial-gradient(ellipse 80% 70% at 30% 35%,black,transparent 75%); animation:gridDrift 24s linear infinite;}
   @keyframes gridDrift{from{background-position:0 0;} to{background-position:52px 52px;}}
   .hero-inner{position:relative; z-index:2; max-width:1180px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(320px,0.85fr); gap:48px; align-items:center;}
@@ -242,6 +242,9 @@
   .card .more{display:inline-block; margin-top:18px; font-size:14px; font-weight:800; color:var(--accent);}
   .cards.two{grid-template-columns:repeat(2,1fr);}
   @media (max-width:700px){.cards.two{grid-template-columns:1fr;}}
+  .cards.svc{grid-template-columns:repeat(4,1fr);}
+  @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
   /* process */
   .steps{display:grid; grid-template-columns:repeat(3,1fr); gap:34px; margin-top:54px;}
   @media (max-width:860px){.steps{grid-template-columns:1fr;}}
@@ -349,6 +352,7 @@
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#help">How I Help</a>
+      <a href="/services/">Services</a>
       <a href="/insights/">Insights</a>
       <a href="#contact">Contact</a>
     </div>
@@ -360,7 +364,7 @@
 <section class="hero" id="top">
   <div class="hero-inner">
     <div>
-      <h1 class="display rise" style="--d:80ms">Sales &amp; marketing answers for <em>Canadian organizations.</em></h1>
+      <h1 class="display rise" style="--d:80ms">Sales &amp; marketing strategy for <em>Canadian organizations.</em></h1>
       <p class="lead rise" style="--d:240ms">I’m Taimoor Syed, an investor, consultant and entrepreneur. After 10+ years in sales and marketing, I help growing organizations work out what’s holding them back, and who’s best placed to fix it. Sometimes that’s me. Often it’s someone in my network.</p>
       <div class="hero-ctas rise" style="--d:400ms">
         <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
@@ -466,6 +470,18 @@
   </div>
 </section>
 
+<section id="services" class="alt">
+  <div class="wrap">
+    <div class="label reveal">Services</div>
+    <h2 class="title display reveal" style="--d:80ms">Ways I can help.</h2>
+    <p class="sub reveal" style="--d:160ms">Pick the one that fits, or start with a conversation and we’ll work it out together.</p>
+    <div class="cards svc">
+      <a class="card reveal" style="--d:0ms" href="/services/website-design/"><span class="tag">Websites</span><h3>Website design</h3><p>A site that’s clear, fast and built to turn visitors into conversations.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:90ms" href="/services/brand-strategy/"><span class="tag">Brand</span><h3>Brand strategy</h3><p>Positioning and messaging that make you the obvious choice.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:180ms" href="/services/campaign-strategy/"><span class="tag">Campaigns</span><h3>Marketing campaign strategy</h3><p>Campaigns built around one goal, so your marketing builds instead of resetting.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:270ms" href="/services/go-to-market-strategy/"><span class="tag">Go-to-market</span><h3>Go-to-market strategy</h3><p>A plan for who you’re selling to, what you’re saying and where, before launch day.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:0ms" href="/services/marketing-audit/"><span class="tag">Audit</span><h3>Marketing audit</h3><p>A fast, honest review of what’s working, what isn’t and what to do next.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:90ms" href="/services/fractional-marketing-leadership/"><span class="tag">Fractional</span><h3>Fractional marketing leadership</h3><p>Senior marketing direction without the cost of a full-time hire.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:180ms" href="/services/video-and-photo-production/"><span class="tag">Video &amp; photo</span><h3>Video and photo production</h3><p>Brand video, product photography and event coverage that has a job to do.</p><span class="more">Learn more →</span></a><a class="card reveal" style="--d:270ms" href="/services/sales-process-setup/"><span class="tag">Sales process</span><h3>Sales process setup</h3><p>A simple, repeatable way to win customers that your team can follow.</p><span class="more">Learn more →</span></a>
+    </div>
+    <p class="reveal" style="margin-top:34px"><a class="link" href="/services/">See all services →</a></p>
+  </div>
+</section>
+
 <section id="how" class="on-dark">
   <div class="wrap">
     <div class="label reveal">How It Works</div>
@@ -524,7 +540,7 @@
         <p class="reveal" style="--d:160ms">Fill out the form or message me on LinkedIn, whichever is easier. Tell me what you’re working on and I’ll take it from there.</p>
         <a class="btn btn-light reveal" style="--d:240ms" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
       </div>
-      <form class="contact-form reveal" id="contactForm" style="--d:160ms" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" novalidate>
+      <form class="contact-form reveal" id="contactForm" style="--d:160ms" novalidate>
         <input type="hidden" name="_subject" value="New inquiry from syedco.com">
         <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;" aria-hidden="true">
         <div><label for="f-first">First Name</label><input id="f-first" name="first_name" type="text" autocomplete="given-name" required></div>
@@ -567,6 +583,7 @@
         <a href="#experience">Experience</a>
         <a href="#about">About</a>
         <a href="#help">How I Help</a>
+        <a href="/services/">Services</a>
         <a href="/insights/">Insights</a>
         <a href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
@@ -633,61 +650,6 @@
     } else { timer = setInterval(tick, 1500); }
   }
 
-  // contact form (posts to Formspree; falls back to a pre-filled email until the form ID is set)
-  var form = document.getElementById('contactForm'), note = document.getElementById('formNote');
-  if(form && note){
-    form.addEventListener('submit', function(ev){
-      ev.preventDefault();
-      note.className = 'form-note full';
-      var bad = [];
-      Array.prototype.forEach.call(form.elements, function(el){
-        if(!el.name || el.name.charAt(0) === '_' || el.type === 'submit' || el.type === 'hidden') return;
-        var ok = el.value.trim() !== '' && (el.type !== 'email' || /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim()));
-        el.classList.toggle('bad', !ok);
-        if(!ok) bad.push(el);
-      });
-      var digits = form.elements.phone.value.replace(/\D/g,'');
-      if(digits.length < 7 && bad.indexOf(form.elements.phone) < 0){ form.elements.phone.classList.add('bad'); bad.push(form.elements.phone); }
-      if(bad.length){
-        note.textContent = 'Please fill in every field with valid details.';
-        note.classList.add('err');
-        bad[0].focus();
-        return;
-      }
-      var v = function(n){ return form.elements[n].value.trim(); };
-      var endpoint = form.getAttribute('action') || '';
-      var btn = form.querySelector('button[type="submit"]');
-
-      // Fallback until the Formspree ID is added: open a pre-filled email instead
-      if(endpoint.indexOf('YOUR_FORM_ID') > -1){
-        var subject = 'Website inquiry from ' + v('first_name') + ' ' + v('last_name') + ' (' + v('business_name') + ')';
-        var body = ['First name: ' + v('first_name'), 'Last name: ' + v('last_name'), 'Business email: ' + v('email'), 'Business name: ' + v('business_name'), 'Website / social: ' + v('website'), 'Phone: ' + v('phone'), 'Annual revenue: ' + v('revenue'), '', 'Message:', v('message')].join('\n');
-        window.location.href = 'mailto:taimoor@syedco.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
-        note.textContent = 'Your email app should open with everything filled in. Just hit send. If nothing opens, email me at taimoor@syedco.com.';
-        note.classList.add('ok');
-        return;
-      }
-
-      btn.disabled = true; btn.style.opacity = '0.6';
-      note.textContent = 'Sending...';
-      fetch(endpoint, { method:'POST', body:new FormData(form), headers:{ 'Accept':'application/json' } })
-        .then(function(res){
-          if(res.ok){
-            form.reset();
-            note.textContent = 'Thanks, your message is in. I’ll get back to you soon.';
-            note.classList.add('ok');
-          } else {
-            throw new Error('bad response');
-          }
-        })
-        .catch(function(){
-          note.textContent = 'Something went wrong sending that. Please try again, or email me at taimoor@syedco.com.';
-          note.classList.add('err');
-        })
-        .then(function(){ btn.disabled = false; btn.style.opacity = ''; });
-    });
-  }
-
   // header shadow + progress bar
   var header = document.getElementById('header'), bar = document.getElementById('progress');
   function onScroll(){
@@ -718,5 +680,6 @@
   });
 })();
 </script>
+<script src="/assets/form.js" defer></script>
 </body>
 </html>

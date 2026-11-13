@@ -43,7 +43,7 @@
       "name": "Taimoor Syed",
       "url": "https://syedco.com/",
       "image": "https://syedco.com/images/headshot.jpg",
-      "jobTitle": "Investor, consultant and entrepreneur",
+      "jobTitle": "President, Syed Co.",
       "description": "Taimoor Syed helps Canadian organizations work out what is holding back their sales and marketing, and who is best placed to fix it. 10+ years of experience in sales, marketing, go-to-market strategy and packaging.",
       "address": {
         "@type": "PostalAddress",
@@ -155,12 +155,12 @@
   .btn-line:hover{border-color:var(--dk-accent); background:rgba(201,185,138,0.08);}
 
   /* hero */
-  .hero{position:relative; background:var(--dk); color:var(--dk-ink); padding:52px 0 84px; overflow:hidden;}
+  .hero{position:relative; background:var(--dk); color:var(--dk-ink); padding:80px 0 72px; overflow:hidden; min-height:min(84vh,780px); display:flex; align-items:center;}
   .hero::before{content:""; position:absolute; inset:0; background-image:linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px); background-size:52px 52px; mask-image:radial-gradient(ellipse 80% 70% at 30% 35%,black,transparent 75%); animation:gridDrift 24s linear infinite;}
   @keyframes gridDrift{from{background-position:0 0;} to{background-position:52px 52px;}}
-  .hero-inner{position:relative; z-index:2; max-width:1180px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(320px,0.85fr); gap:48px; align-items:center;}
+  .hero-inner{width:100%; position:relative; z-index:2; max-width:1180px; margin:0 auto; padding:0 24px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(320px,0.85fr); gap:48px; align-items:center;}
   @media (max-width:940px){.hero-inner{grid-template-columns:1fr;}}
-  .hero h1{font-size:clamp(36px,5vw,68px);}
+  .hero h1{font-size:clamp(34px,4.6vw,62px);}
   .hero h1 em{font-style:normal; color:var(--dk-accent);}
   .hero .lead{margin-top:26px; font-size:clamp(16px,1.8vw,19px); color:var(--dk-muted); max-width:580px; font-weight:500; line-height:1.7;}
   .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-top:38px;}
@@ -180,8 +180,8 @@
   /* ticker */
   .ticker{background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:20px 0; overflow:hidden;}
   .ticker-track{display:flex; width:max-content; animation:slide 34s linear infinite;}
-  .ticker-track span{font-family:'Archivo Black'; font-size:19px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-2); white-space:nowrap; padding-right:34px;}
-  .ticker-track i{font-style:normal; color:var(--accent); padding-left:34px;}
+  .ticker-track span{font-family:'Archivo Black'; font-size:19px; text-transform:uppercase; letter-spacing:0.04em; color:var(--ink-2); white-space:nowrap;}
+  .ticker-track i{font-style:normal; color:var(--accent); padding:0 34px; font-size:12px; vertical-align:middle;}
   @keyframes slide{from{transform:translateX(0);} to{transform:translateX(-50%);}}
 
   /* sections */
@@ -371,20 +371,20 @@
   <div class="hero-inner">
     <div>
       <h1 class="display rise" style="--d:80ms">Sales &amp; marketing strategy for <em>Canadian organizations.</em></h1>
-      <p class="lead rise" style="--d:240ms">I’m Taimoor Syed, an investor, consultant and entrepreneur. After 10+ years in sales and marketing, I help growing organizations work out what’s holding them back, and who’s best placed to fix it. Sometimes that’s me. Often it’s someone in my network.</p>
+      <p class="lead rise" style="--d:240ms">We help growing organizations find what’s holding them back and build a strategy/team to fix it.</p>
       <div class="hero-ctas rise" style="--d:400ms">
         <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
         <a class="btn btn-line" href="#help">How I can help</a>
       </div>
       <div class="hero-stats rise" style="--d:560ms">
         <div class="stat"><b data-count="10" data-suffix="+">10+</b><span>Years in sales &amp; marketing</span></div>
-        <div class="stat"><b data-count="50" data-suffix="+">50+</b><span>Canadian organizations worked with</span></div>
+        <div class="stat"><b data-count="95" data-suffix="+">95+</b><span>Organizations worked with</span></div>
         <div class="stat"><b data-count="100" data-suffix="%">100%</b><span>Focused on Canadian business</span></div>
       </div>
     </div>
     <div class="hero-photo rise" style="--d:300ms">
       <img width="760" height="760" src="images/headshot.jpg" alt="Taimoor Syed">
-      <div class="badge">Taimoor Syed<span>Founding Partner, Overtime Marketing<br>Vancouver, BC</span></div>
+      <div class="badge">Taimoor Syed<span>President, Syed Co | BC, Canada</span></div>
     </div>
   </div>
 </section>
@@ -416,8 +416,8 @@
 
 <div class="ticker" aria-hidden="true">
   <div class="ticker-track">
-    <span>Sales Strategy<i>✶</i>Marketing Strategy<i>✶</i>Go-To-Market<i>✶</i>Revenue Growth<i>✶</i>Brand<i>✶</i>Partnerships<i>✶</i>Introductions<i>✶</i>Honest Advice<i>✶</i></span>
-    <span>Sales Strategy<i>✶</i>Marketing Strategy<i>✶</i>Go-To-Market<i>✶</i>Revenue Growth<i>✶</i>Brand<i>✶</i>Partnerships<i>✶</i>Introductions<i>✶</i>Honest Advice<i>✶</i></span>
+    <span>SEO &amp; AI Search<i>•</i>Content Marketing<i>•</i>Website Design<i>•</i>Brand Strategy<i>•</i>Campaign Strategy<i>•</i>Paid Advertising<i>•</i>Social Media<i>•</i>Email Marketing<i>•</i>Video &amp; Photo<i>•</i>Go-to-Market<i>•</i>Marketing Audits<i>•</i>Fractional Leadership<i>•</i>Sales Process<i>•</i>Outbound Lead Gen<i>•</i>AI Automation<i>•</i></span>
+    <span>SEO &amp; AI Search<i>•</i>Content Marketing<i>•</i>Website Design<i>•</i>Brand Strategy<i>•</i>Campaign Strategy<i>•</i>Paid Advertising<i>•</i>Social Media<i>•</i>Email Marketing<i>•</i>Video &amp; Photo<i>•</i>Go-to-Market<i>•</i>Marketing Audits<i>•</i>Fractional Leadership<i>•</i>Sales Process<i>•</i>Outbound Lead Gen<i>•</i>AI Automation<i>•</i></span>
   </div>
 </div>
 
@@ -510,7 +510,7 @@
     <h2 class="title display reveal" style="--d:80ms">Practical thinking, in plain English.</h2>
     <p class="sub reveal" style="--d:160ms">Short reads on the problems that come up most often.</p>
     <div class="cards two">
-      <a class="card reveal" style="--d:0ms" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:90ms" href="/insights/why-sales-stalled/"><span class="tag">Sales</span><h3>Why sales stalled, and where to look first</h3><p>Before you hire, discount or panic, spend 30 minutes finding where deals are actually falling off. A simple way to diagnose a sales slump.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:180ms" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:270ms" href="/insights/how-to-launch-a-product-in-canada/"><span class="tag">Launches</span><h3>How to launch a product in Canada</h3><p>A launch is not an announcement. A simple three-phase plan for launching a product in Canada that builds demand before launch day and keeps it going after.</p><span class="more">Read the article →</span></a>
+      <a class="card reveal" style="--d:0ms" href="/insights/seo-vs-aeo-vs-geo/"><span class="tag">Search</span><h3>SEO vs AEO vs GEO: what should you actually do?</h3><p>SEO, AEO and GEO explained in plain English, with what they have in common, where they differ and a short list of what to do first.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:90ms" href="/insights/how-to-plan-a-brand-video-or-photo-shoot/"><span class="tag">Video</span><h3>How to plan a brand video or photo shoot</h3><p>A practical guide to planning brand video and photography: start with the goal, build the shot list around it, prepare on the day and plan where it will live.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:180ms" href="/insights/what-is-a-marketing-campaign/"><span class="tag">Campaigns</span><h3>What is a marketing campaign, and what isn’t?</h3><p>A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.</p><span class="more">Read the article →</span></a><a class="card reveal" style="--d:270ms" href="/insights/what-affects-the-cost-of-a-website/"><span class="tag">Websites</span><h3>What affects the cost of a website</h3><p>The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.</p><span class="more">Read the article →</span></a>
     </div>
     <p class="reveal" style="margin-top:34px"><a class="link" href="/insights/">See all insights →</a></p>
   </div>

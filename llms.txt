@@ -1,6 +1,6 @@
 # Syed Co.
 
-> Syed Co. is the personal site of Taimoor Syed, an investor, consultant and entrepreneur based in Vancouver, BC. He helps Canadian organizations work out what is holding back their sales and marketing, and who is best placed to fix it. Sometimes that is himself and often someone in his network.
+> Syed Co. is the personal site of Taimoor Syed, an investor, consultant and entrepreneur based in Vancouver, BC. He helps Canadian organizations with sales and marketing: SEO and AI search visibility, websites, brand, campaigns, paid ads, email, go-to-market strategy, audits, fractional leadership and sales process.
 
 ## About Taimoor Syed
 
@@ -10,14 +10,35 @@
 
 ## Services
 
+### Search & AI Visibility
+
+- [SEO, AEO and GEO (AI search visibility)](https://syedco.com/services/seo-aeo-geo-ai-search-visibility/): SEO, AEO and GEO for Canadian organizations: get found in Google and in AI answers from ChatGPT, Gemini and Perplexity, with a clear plan and honest expectations.
+- [Content marketing and thought leadership](https://syedco.com/services/content-marketing/): Content marketing and thought leadership for Canadian organizations: strategy, articles, guides and case studies that build trust, support SEO and bring in leads.
+
+### Brand & Web
+
 - [Website design](https://syedco.com/services/website-design/): Custom website design and development for Canadian organizations, planned around what visitors need to do and what your business needs them to do.
 - [Brand strategy](https://syedco.com/services/brand-strategy/): Brand strategy and positioning for Canadian organizations: who you’re for, what makes you different and how to say it so your market remembers.
+
+### Campaigns & Content
+
 - [Marketing campaign strategy](https://syedco.com/services/campaign-strategy/): Marketing campaign strategy and planning for Canadian organizations: awareness, launch, growth, event and rebrand campaigns built around one clear objective.
+- [Paid advertising (Google, Meta and LinkedIn)](https://syedco.com/services/paid-advertising/): Paid advertising for Canadian organizations: Google, Meta and LinkedIn campaigns, landing pages and tracking built around leads and sales, not clicks.
+- [Social media marketing](https://syedco.com/services/social-media-marketing/): Social media marketing for Canadian organizations: strategy, content and management on LinkedIn, Instagram and more, tied to business goals, not likes.
+- [Email marketing and automation](https://syedco.com/services/email-marketing/): Email marketing and automation for Canadian organizations: strategy, newsletters and automated sequences built to nurture leads, with CASL-aware practices.
+- [Video and photo production](https://syedco.com/services/video-and-photo-production/): Brand video, product photography, event coverage and social content for Canadian organizations, planned around a goal so every shot has a purpose.
+
+### Strategy & Leadership
+
 - [Go-to-market strategy](https://syedco.com/services/go-to-market-strategy/): Go-to-market strategy for new products, services and markets in Canada: customers, positioning, channels and a three-phase launch plan.
 - [Marketing audit](https://syedco.com/services/marketing-audit/): A marketing audit for Canadian organizations: a clear review of your goals, channels, website and spend, with a prioritized 90-day action plan.
 - [Fractional marketing leadership](https://syedco.com/services/fractional-marketing-leadership/): Fractional marketing leadership for Canadian organizations: senior strategy, budget and team direction without a full-time executive hire.
-- [Video and photo production](https://syedco.com/services/video-and-photo-production/): Brand video, product photography, event coverage and social content for Canadian organizations, planned around a goal so every shot has a purpose.
+
+### Sales & Growth Systems
+
 - [Sales process setup](https://syedco.com/services/sales-process-setup/): Sales process setup and coaching for Canadian organizations: map your funnel, find where deals leak and build a repeatable process your team can follow.
+- [Outbound lead generation](https://syedco.com/services/outbound-lead-generation/): Outbound lead generation for Canadian B2B organizations: target lists, email, LinkedIn and phone outreach plans that start conversations with the right buyers.
+- [AI marketing and sales automation](https://syedco.com/services/ai-marketing-and-sales-automation/): AI marketing and sales automation for Canadian organizations: practical workflows for content, lead follow-up and reporting, with human review and clear guardrails.
 
 ## Insights
 
@@ -31,6 +52,7 @@
 - [What affects the cost of a website (and how to budget for one)](https://syedco.com/insights/what-affects-the-cost-of-a-website/): The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.
 - [What is a marketing campaign (and what isn’t)?](https://syedco.com/insights/what-is-a-marketing-campaign/): A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.
 - [How to plan a brand video or photo shoot (and get content you can use)](https://syedco.com/insights/how-to-plan-a-brand-video-or-photo-shoot/): A practical guide to planning brand video and photography: start with the goal, build the shot list around it, prepare on the day and plan where it will live.
+- [SEO vs AEO vs GEO: what’s the difference, and what should you actually do?](https://syedco.com/insights/seo-vs-aeo-vs-geo/): SEO, AEO and GEO explained in plain English, with what they have in common, where they differ and a short list of what to do first.
 
 ## Contact
 

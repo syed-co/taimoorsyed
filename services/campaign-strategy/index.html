@@ -83,10 +83,50 @@
         },
         {
           "@type": "Question",
+          "name": "How do you plan a marketing campaign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set one measurable objective, define the audience, choose the single idea the campaign will express, pick the channels that reach those people, build a timeline and budget across phases and decide how you’ll measure it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What’s the difference between a campaign and an always-on marketing program?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A campaign has a goal and an end date. Always-on marketing keeps running in the background. The strongest results usually combine both."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much should I spend on a campaign?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the goal and the audience size. I’d rather start with the objective and work back to a realistic budget than the other way around."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you measure whether a campaign worked?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Against the objective set at the start, such as qualified leads, bookings, sign-ups or sales, rather than vanity numbers like impressions."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Who actually does the work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part."
+            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part."
           }
         },
         {
@@ -444,6 +484,44 @@
   .cards.svc{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
+
+/* ---------- Landing pages ---------- */
+  .lp-hero{background:var(--dk); color:var(--dk-ink); padding:56px 0 70px;}
+  .lp-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr); gap:48px; align-items:start;}
+  @media (max-width:980px){.lp-grid{grid-template-columns:1fr; gap:36px;}}
+  .lp-copy h1{font-size:clamp(30px,4.4vw,52px); max-width:640px;}
+  .lp-copy .dek{margin-top:20px; font-size:18px; color:var(--dk-muted); max-width:580px; line-height:1.7; font-weight:500;}
+  .lp-bullets{list-style:none; margin:26px 0 0; display:grid; gap:12px; max-width:560px;}
+  .lp-bullets li{position:relative; padding-left:30px; font-weight:600; line-height:1.5;}
+  .lp-bullets li::before{content:"✓"; position:absolute; left:0; color:var(--dk-accent); font-weight:800;}
+  .lp-trust{margin-top:26px; font-size:13px; color:var(--dk-muted); font-weight:600; max-width:520px; line-height:1.6;}
+  .lp-form h2{font-family:'Archivo Black','Inter',sans-serif; text-transform:uppercase; font-size:26px; line-height:1.1; margin-bottom:8px;}
+  .lp-form > p{color:var(--dk-muted); font-size:15px; margin-bottom:18px; line-height:1.6;}
+  .svc-section.tight{padding:44px 0 10px;}
+  .quick-box{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:16px; padding:26px 30px;}
+  .quick-box .label{margin-bottom:10px;}
+  .quick-box p{font-size:19px; line-height:1.75; font-weight:500;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .toc a{border:1px solid var(--line); background:var(--card); border-radius:999px; padding:9px 16px; font-size:13px; font-weight:700; text-decoration:none; color:var(--ink); transition:border-color .2s,background .2s;}
+  .toc a:hover{border-color:var(--accent);}
+  .toc.dark a{background:transparent; border-color:var(--dk-line); color:var(--dk-ink);}
+  .toc.dark a:hover{border-color:var(--dk-accent);}
+  .cta-band{padding:76px 0;}
+  .cta-band h2{font-size:clamp(28px,4vw,46px); max-width:760px;}
+  .cta-band p{margin-top:16px; color:var(--dk-muted); font-size:18px; max-width:620px; line-height:1.7;}
+  .cta-band .svc-cta{margin-top:28px;}
+  .sticky-cta{display:none;}
+  @media (max-width:760px){
+    .sticky-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:rgba(14,14,12,0.92); backdrop-filter:blur(10px); border-top:1px solid var(--dk-line); transform:translateY(110%); transition:transform .3s;}
+    .sticky-cta.show{transform:none;}
+    .sticky-cta .btn{display:block; text-align:center; padding:15px 20px;}
+  }
+  .card.cat h3{font-size:22px; margin-bottom:8px;}
+  .card.cat h3 a{text-decoration:none;}
+  .card.cat ul{list-style:none; margin:16px 0 0;}
+  .card.cat li{margin-bottom:8px;}
+  .card.cat li a{color:var(--ink-2); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid var(--line);}
+  .card.cat li a:hover{color:var(--accent); border-color:var(--accent);}
 </style>
 </head>
 <body>
@@ -463,90 +541,19 @@
   </nav>
 </header>
 <main id="main">
-<section class="article-hero svc-hero">
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / Marketing campaign strategy</div>
-    <h1 class="display">Marketing campaigns built around one clear goal</h1>
-    <p class="dek">Disconnected tactics look like activity but don’t build momentum. I plan campaigns where every piece serves one objective and one message.</p>
-    <div class="svc-cta"><a class="btn btn-light" href="#contact">Start a conversation</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Is this for you?</div>
-    <h2 class="title display">Who this is for, and who it isn’t.</h2>
-    <div class="fit-grid">
-      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’re running tactics (a video here, some posts there) with nothing tying them together</li><li>You have a launch, event or growth target and need a plan to get there</li><li>You want marketing that compounds instead of starting over each month</li></ul></div>
-      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You need results within the next two weeks</li><li>You want to approve every individual post and tactic</li><li>You don’t have a clear business objective yet (we can work that out first, but it comes first)</li></ul></div>
+<section class="lp-hero" id="top">
+  <div class="wrap lp-grid">
+    <div class="lp-copy">
+      <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / <a href="/services/#cat-campaigns">Campaigns &amp; Content</a></div>
+      <h1 class="display">Marketing campaigns built around one clear goal</h1>
+      <p class="dek">Disconnected tactics look like activity but don’t build momentum. I plan campaigns where every piece serves one objective and one message.</p>
+      <ul class="lp-bullets"><li>One goal, one message and a plan for every piece</li><li>Awareness, launch, growth, event or rebrand campaigns</li><li>Execution led by me or handed to your team</li></ul>
+      <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+      <p class="lp-trust">Experience with organizations including Startup Canada, League of Innovators and BC Food &amp; Beverage.</p>
     </div>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">The problem</div>
-    <h2 class="title display">What this solves.</h2>
-    <div class="cards two" style="margin-top:34px">
-      <div class="card"><h3>Lots of activity, little to show for it</h3><p>Without a clear objective, you can’t tell which of your efforts is actually working.</p></div><div class="card"><h3>Every channel says something different</h3><p>A mixed message gets forgotten. A repeated one sticks.</p></div><div class="card"><h3>Spend resets every month</h3><p>If stopping spend stops results, nothing is being built.</p></div><div class="card"><h3>You’re not sure what to do first</h3><p>A good plan tells you what to do now, what to do next and what to leave out.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">What’s included</div>
-    <h2 class="title display">What you get.</h2>
-    <ul class="inc-list"><li>Objective setting with a clear 90-day target</li><li>Audience and message work</li><li>Campaign theme and creative direction</li><li>Channel and tactic plan</li><li>Content and production plan</li><li>Timeline and budget allocation</li><li>Measurement plan</li><li>Oversight of execution, including specialists where needed</li></ul>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">How it works</div>
-    <h2 class="title display">Four steps, no surprises.</h2>
-    <div class="svc-steps">
-      <div class="svc-step"><span class="n">01</span><h3>Define the objective</h3><p>What does winning look like in 90 days? We put a number on it.</p></div><div class="svc-step"><span class="n">02</span><h3>Build the theme</h3><p>The single idea and message every piece of the campaign will express.</p></div><div class="svc-step"><span class="n">03</span><h3>Plan and execute</h3><p>Every tactic is chosen because it serves the objective. Nothing extra, nothing missing.</p></div><div class="svc-step"><span class="n">04</span><h3>Measure and build</h3><p>We check what’s working, double down and carry the momentum into the next phase.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Experience</div>
-    <h2 class="title display">Work like this.</h2>
-    <ul class="inc-list work"><li>Flavour Shaker Foods: full brand launch for a Victoria spice startup entering a competitive consumer market</li><li>Startup Canada: campaign around the Young Entrepreneur of the Year Awards in Manitoba</li><li>Bedford Dental: growth campaign focused on new patient acquisition</li><li>Bodega Ridge: brand awareness campaign for a Galiano Island winery and resort</li></ul>
-    <blockquote class="svc-quote"><p>“They were clear communicators, super professional and very understanding of our goals.”</p><cite>Joel Hansen, Head of Marketing, League of Innovators</cite></blockquote>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">Questions</div>
-    <h2 class="title display">Common questions.</h2>
-    <div class="svc-faq">
-      <details><summary>What’s the difference between a campaign and regular marketing?</summary><p>Regular marketing is a collection of tactics. A campaign is a coordinated plan where every tactic serves one objective and repeats one message, so the pieces build on each other.</p></details><details><summary>What types of campaigns do you plan?</summary><p>The five I plan most often are brand awareness, product or service launch, growth, event, and rebrand campaigns.</p></details><details><summary>How long until we see results?</summary><p>It depends on the objective. A launch can generate demand before you open. Awareness usually builds over 60 to 90 days. We agree on realistic timelines before starting.</p></details><details><summary>Do you run the campaign too?</summary><p>I can lead execution and bring in specialists for filming, design and media buying, or I can hand you a plan your team or agency carries out.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Keep reading</div>
-    <h2 class="title display">Related reading.</h2>
-    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/what-is-a-marketing-campaign/"><span class="tag">Campaigns</span><h3>What is a marketing campaign, and what isn’t?</h3><p>A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
-  </div>
-</section>
-
-<section class="cta split on-dark" id="contact">
-  <div class="wrap">
-    <div class="split-grid">
-      <div class="split-copy">
-        <div class="label">Let’s Talk</div>
-        <h2 class="display">Tell me what you’re working on.</h2>
-        <p>Fill in the form or message me on LinkedIn. I’ll read it myself and reply with an honest take, including who else might be a better fit if it isn’t me.</p>
-        <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
-      </div>
+    <div class="lp-form" id="lead-form">
+      <h2>Book a call or send a note</h2>
+      <p>Tell me a bit about what you’re working on. I read every message myself.</p>
       <form class="contact-form reveal" id="contactForm" style="--d:160ms" novalidate>
         <input type="hidden" name="_subject" value="New Marketing campaign strategy inquiry from syedco.com">
         <input type="hidden" name="service" value="Marketing campaign strategy">
@@ -579,8 +586,134 @@
     </div>
   </div>
 </section>
-<script src="/assets/form.js" defer></script>
 
+<section class="svc-section tight" id="answer">
+  <div class="wrap">
+    <div class="quick-box"><span class="label">The short answer</span><p>A marketing campaign is a coordinated plan where every tactic serves one objective and repeats one message over a set period. Campaign strategy is deciding that objective, the message and the mix of tactics before spending anything.</p></div>
+    <nav class="toc" aria-label="On this page">
+      <a href="#fit">Who it’s for</a><a href="#solves">What it solves</a><a href="#included">What’s included</a><a href="#how">How it works</a><a href="#cost">Cost</a><a href="#mistakes">Common mistakes</a><a href="#choose">Choosing a provider</a><a href="#faq">Questions</a>
+    </nav>
+  </div>
+</section>
+
+<section class="svc-section" id="fit">
+  <div class="wrap">
+    <div class="label">Is this for you?</div>
+    <h2 class="title display">Who this is for, and who it isn’t.</h2>
+    <div class="fit-grid">
+      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’re running tactics (a video here, some posts there) with nothing tying them together</li><li>You have a launch, event or growth target and need a plan to get there</li><li>You want marketing that compounds instead of starting over each month</li></ul></div>
+      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You need results within the next two weeks</li><li>You want to approve every individual post and tactic</li><li>You don’t have a clear business objective yet (we can work that out first, but it comes first)</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt" id="solves">
+  <div class="wrap">
+    <div class="label">The problem</div>
+    <h2 class="title display">What this solves.</h2>
+    <div class="cards two" style="margin-top:34px">
+      <div class="card"><h3>Lots of activity, little to show for it</h3><p>Without a clear objective, you can’t tell which of your efforts is actually working.</p></div><div class="card"><h3>Every channel says something different</h3><p>A mixed message gets forgotten. A repeated one sticks.</p></div><div class="card"><h3>Spend resets every month</h3><p>If stopping spend stops results, nothing is being built.</p></div><div class="card"><h3>You’re not sure what to do first</h3><p>A good plan tells you what to do now, what to do next and what to leave out.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section" id="included">
+  <div class="wrap">
+    <div class="label">What’s included</div>
+    <h2 class="title display">What you get.</h2>
+    <ul class="inc-list"><li>Objective setting with a clear 90-day target</li><li>Audience and message work</li><li>Campaign theme and creative direction</li><li>Channel and tactic plan</li><li>Content and production plan</li><li>Timeline and budget allocation</li><li>Measurement plan</li><li>Oversight of execution, including specialists where needed</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="how">
+  <div class="wrap">
+    <div class="label">How it works</div>
+    <h2 class="title display">Four steps, no surprises.</h2>
+    <div class="svc-steps">
+      <div class="svc-step"><span class="n">01</span><h3>Define the objective</h3><p>What does winning look like in 90 days? We put a number on it.</p></div><div class="svc-step"><span class="n">02</span><h3>Build the theme</h3><p>The single idea and message every piece of the campaign will express.</p></div><div class="svc-step"><span class="n">03</span><h3>Plan and execute</h3><p>Every tactic is chosen because it serves the objective. Nothing extra, nothing missing.</p></div><div class="svc-step"><span class="n">04</span><h3>Measure and build</h3><p>We check what’s working, double down and carry the momentum into the next phase.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band on-dark">
+  <div class="wrap">
+    <h2 class="display">Want to see if this fits?</h2>
+    <p>A short call is the quickest way to find out. No pitch, just an honest view of what I’d do.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Experience</div>
+    <h2 class="title display">Work like this.</h2>
+    <ul class="inc-list work"><li>Flavour Shaker Foods: full brand launch for a Victoria spice startup entering a competitive consumer market</li><li>Startup Canada: campaign around the Young Entrepreneur of the Year Awards in Manitoba</li><li>Bedford Dental: growth campaign focused on new patient acquisition</li><li>Bodega Ridge: brand awareness campaign for a Galiano Island winery and resort</li></ul>
+    <blockquote class="svc-quote"><p>“They were clear communicators, super professional and very understanding of our goals.”</p><cite>Joel Hansen, Head of Marketing, League of Innovators</cite></blockquote>
+  </div>
+</section>
+
+<section class="svc-section alt" id="cost">
+  <div class="wrap">
+    <div class="label">Cost</div>
+    <h2 class="title display">What affects the cost.</h2>
+    <p class="sub">This is scoped to your situation, so I don’t publish fixed prices. These are the things that move it:</p>
+    <ul class="inc-list"><li>The objective and how many audiences it covers</li><li>The channels and formats involved</li><li>How much content needs producing</li><li>Length of the campaign and how many phases it has</li><li>Whether I manage execution or hand over a plan</li></ul>
+    <p class="sub" style="margin-top:26px">The quickest way to get a straight number is a short call. I’ll tell you what I’d recommend and roughly what it involves before you commit to anything.</p>
+  </div>
+</section>
+
+<section class="svc-section" id="mistakes">
+  <div class="wrap">
+    <div class="label">Avoid these</div>
+    <h2 class="title display">Common mistakes.</h2>
+    <ul class="inc-list"><li>Running tactics with no single objective</li><li>Changing the message on every channel</li><li>Spending the whole budget in the first week</li><li>Skipping measurement until the campaign ends</li><li>Having no plan for what happens after</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="choose">
+  <div class="wrap">
+    <div class="label">Hiring help</div>
+    <h2 class="title display">How to choose a provider.</h2>
+    <p class="sub">Whether you hire me or someone else, these are the signs of a good one:</p>
+    <ul class="inc-list"><li>They ask what success looks like before suggesting tactics</li><li>They can explain how each piece supports the others</li><li>They’re clear on how results will be measured</li><li>They plan for after launch, not just launch day</li><li>They’ll tell you what to leave out</li></ul>
+  </div>
+</section>
+
+<section class="svc-section" id="faq">
+  <div class="wrap">
+    <div class="label">Questions</div>
+    <h2 class="title display">Common questions.</h2>
+    <div class="svc-faq">
+      <details><summary>What’s the difference between a campaign and regular marketing?</summary><p>Regular marketing is a collection of tactics. A campaign is a coordinated plan where every tactic serves one objective and repeats one message, so the pieces build on each other.</p></details><details><summary>What types of campaigns do you plan?</summary><p>The five I plan most often are brand awareness, product or service launch, growth, event, and rebrand campaigns.</p></details><details><summary>How long until we see results?</summary><p>It depends on the objective. A launch can generate demand before you open. Awareness usually builds over 60 to 90 days. We agree on realistic timelines before starting.</p></details><details><summary>Do you run the campaign too?</summary><p>I can lead execution and bring in specialists for filming, design and media buying, or I can hand you a plan your team or agency carries out.</p></details><details><summary>How do you plan a marketing campaign?</summary><p>Set one measurable objective, define the audience, choose the single idea the campaign will express, pick the channels that reach those people, build a timeline and budget across phases and decide how you’ll measure it.</p></details><details><summary>What’s the difference between a campaign and an always-on marketing program?</summary><p>A campaign has a goal and an end date. Always-on marketing keeps running in the background. The strongest results usually combine both.</p></details><details><summary>How much should I spend on a campaign?</summary><p>It depends on the goal and the audience size. I’d rather start with the objective and work back to a realistic budget than the other way around.</p></details><details><summary>How do you measure whether a campaign worked?</summary><p>Against the objective set at the start, such as qualified leads, bookings, sign-ups or sales, rather than vanity numbers like impressions.</p></details><details><summary>How do I get started?</summary><p>Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt">
+  <div class="wrap">
+    <div class="label">Related services</div>
+    <h2 class="title display">Often paired with.</h2>
+    <div class="cards" style="margin-top:34px"><a class="card" href="/services/paid-advertising/"><span class="tag">Paid ads</span><h3>Paid advertising (Google, Meta and LinkedIn)</h3><p>Ads that send the right people to pages built to convert.</p><span class="more">Learn more →</span></a><a class="card" href="/services/video-and-photo-production/"><span class="tag">Video &amp; photo</span><h3>Video and photo production</h3><p>Brand video, product photography and event coverage that has a job to do.</p><span class="more">Learn more →</span></a><a class="card" href="/services/go-to-market-strategy/"><span class="tag">Go-to-market</span><h3>Go-to-market strategy</h3><p>A plan for who you’re selling to, what you’re saying and where, before launch day.</p><span class="more">Learn more →</span></a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Keep reading</div>
+    <h2 class="title display">Related reading.</h2>
+    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/what-is-a-marketing-campaign/"><span class="tag">Campaigns</span><h3>What is a marketing campaign, and what isn’t?</h3><p>A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
+  </div>
+</section>
+
+<section class="cta-band on-dark final">
+  <div class="wrap">
+    <h2 class="display">Ready to talk it through?</h2>
+    <p>Book a call, send the form above or message me on LinkedIn. I’ll reply with an honest take, including who else might be a better fit if it isn’t me.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+<div class="sticky-cta" id="stickyCta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a></div>
+<script src="/assets/form.js" defer></script>
 </main>
 <footer>
   <div class="wrap">

@@ -83,10 +83,50 @@
         },
         {
           "@type": "Question",
+          "name": "What is a brand strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A brand strategy is a written plan for how your organization is positioned in the market: who it serves, what it stands for, what makes it different and how it should sound. It guides design, marketing and sales messaging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a brand positioning statement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A short statement that says who you serve, what you offer and why you’re the better choice. It’s the anchor for your messaging."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When is the right time for a rebrand?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When the business has changed, you’re entering new markets, you’re losing deals because of perception or your team can’t explain what you do consistently."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do small and mid-sized organizations need a brand strategy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Often more than large ones. A clear position helps you win without outspending bigger competitors."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Who actually does the work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part."
+            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part."
           }
         },
         {
@@ -444,6 +484,44 @@
   .cards.svc{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
+
+/* ---------- Landing pages ---------- */
+  .lp-hero{background:var(--dk); color:var(--dk-ink); padding:56px 0 70px;}
+  .lp-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr); gap:48px; align-items:start;}
+  @media (max-width:980px){.lp-grid{grid-template-columns:1fr; gap:36px;}}
+  .lp-copy h1{font-size:clamp(30px,4.4vw,52px); max-width:640px;}
+  .lp-copy .dek{margin-top:20px; font-size:18px; color:var(--dk-muted); max-width:580px; line-height:1.7; font-weight:500;}
+  .lp-bullets{list-style:none; margin:26px 0 0; display:grid; gap:12px; max-width:560px;}
+  .lp-bullets li{position:relative; padding-left:30px; font-weight:600; line-height:1.5;}
+  .lp-bullets li::before{content:"✓"; position:absolute; left:0; color:var(--dk-accent); font-weight:800;}
+  .lp-trust{margin-top:26px; font-size:13px; color:var(--dk-muted); font-weight:600; max-width:520px; line-height:1.6;}
+  .lp-form h2{font-family:'Archivo Black','Inter',sans-serif; text-transform:uppercase; font-size:26px; line-height:1.1; margin-bottom:8px;}
+  .lp-form > p{color:var(--dk-muted); font-size:15px; margin-bottom:18px; line-height:1.6;}
+  .svc-section.tight{padding:44px 0 10px;}
+  .quick-box{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:16px; padding:26px 30px;}
+  .quick-box .label{margin-bottom:10px;}
+  .quick-box p{font-size:19px; line-height:1.75; font-weight:500;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .toc a{border:1px solid var(--line); background:var(--card); border-radius:999px; padding:9px 16px; font-size:13px; font-weight:700; text-decoration:none; color:var(--ink); transition:border-color .2s,background .2s;}
+  .toc a:hover{border-color:var(--accent);}
+  .toc.dark a{background:transparent; border-color:var(--dk-line); color:var(--dk-ink);}
+  .toc.dark a:hover{border-color:var(--dk-accent);}
+  .cta-band{padding:76px 0;}
+  .cta-band h2{font-size:clamp(28px,4vw,46px); max-width:760px;}
+  .cta-band p{margin-top:16px; color:var(--dk-muted); font-size:18px; max-width:620px; line-height:1.7;}
+  .cta-band .svc-cta{margin-top:28px;}
+  .sticky-cta{display:none;}
+  @media (max-width:760px){
+    .sticky-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:rgba(14,14,12,0.92); backdrop-filter:blur(10px); border-top:1px solid var(--dk-line); transform:translateY(110%); transition:transform .3s;}
+    .sticky-cta.show{transform:none;}
+    .sticky-cta .btn{display:block; text-align:center; padding:15px 20px;}
+  }
+  .card.cat h3{font-size:22px; margin-bottom:8px;}
+  .card.cat h3 a{text-decoration:none;}
+  .card.cat ul{list-style:none; margin:16px 0 0;}
+  .card.cat li{margin-bottom:8px;}
+  .card.cat li a{color:var(--ink-2); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid var(--line);}
+  .card.cat li a:hover{color:var(--accent); border-color:var(--accent);}
 </style>
 </head>
 <body>
@@ -463,90 +541,19 @@
   </nav>
 </header>
 <main id="main">
-<section class="article-hero svc-hero">
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / Brand strategy</div>
-    <h1 class="display">Brand strategy that makes you the obvious choice</h1>
-    <p class="dek">Positioning, messaging and a brand platform that tell your market who you are, who you’re for and why it matters. All before anyone designs a logo.</p>
-    <div class="svc-cta"><a class="btn btn-light" href="#contact">Start a conversation</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Is this for you?</div>
-    <h2 class="title display">Who this is for, and who it isn’t.</h2>
-    <div class="fit-grid">
-      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’ve outgrown your brand and it no longer reflects the business</li><li>You’re entering a new market or launching a new offer</li><li>You compete on price because it’s hard to explain what makes you different</li></ul></div>
-      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You only want a new logo with no strategy behind it</li><li>You want a quick fix without input from the people who run the business</li><li>There’s no appetite to make real decisions about who you’re for</li></ul></div>
+<section class="lp-hero" id="top">
+  <div class="wrap lp-grid">
+    <div class="lp-copy">
+      <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / <a href="/services/#cat-brand">Brand &amp; Web</a></div>
+      <h1 class="display">Brand strategy that makes you the obvious choice</h1>
+      <p class="dek">Positioning, messaging and a brand platform that tell your market who you are, who you’re for and why it matters. All before anyone designs a logo.</p>
+      <ul class="lp-bullets"><li>Positioning and messaging your whole team can use</li><li>A clear story that separates you from competitors</li><li>A roll-out plan, so it doesn’t sit in a document</li></ul>
+      <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+      <p class="lp-trust">Experience with organizations including Startup Canada, League of Innovators and BC Food &amp; Beverage.</p>
     </div>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">The problem</div>
-    <h2 class="title display">What this solves.</h2>
-    <div class="cards two" style="margin-top:34px">
-      <div class="card"><h3>You sound like everyone else in your category</h3><p>If a competitor could swap logos with you and nobody would notice, your brand isn’t doing its job.</p></div><div class="card"><h3>Your team describes the business five different ways</h3><p>Mixed messages inside the company become mixed messages outside it.</p></div><div class="card"><h3>Your brand hasn’t caught up with what you’ve become</h3><p>Businesses evolve faster than their branding. The gap confuses customers and undersells you.</p></div><div class="card"><h3>You compete on price</h3><p>When there’s no clear difference, price becomes the only difference people can see.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">What’s included</div>
-    <h2 class="title display">What you get.</h2>
-    <ul class="inc-list"><li>Stakeholder and market review</li><li>Audience and competitor analysis</li><li>Positioning statement</li><li>Messaging framework with key messages and proof points</li><li>Tone of voice guidance</li><li>Brand narrative</li><li>Rollout plan across your channels</li><li>Visual identity and guidelines through trusted design partners, if needed</li></ul>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">How it works</div>
-    <h2 class="title display">Four steps, no surprises.</h2>
-    <div class="svc-steps">
-      <div class="svc-step"><span class="n">01</span><h3>Listen</h3><p>I talk to the people who know the business best: leadership, staff, customers.</p></div><div class="svc-step"><span class="n">02</span><h3>Research</h3><p>We look at your audience and the competition to find the space only you can own.</p></div><div class="svc-step"><span class="n">03</span><h3>Position</h3><p>A clear positioning and messaging framework your whole team can use.</p></div><div class="svc-step"><span class="n">04</span><h3>Roll out</h3><p>A plan for putting the new brand to work across your site, sales conversations and marketing.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Experience</div>
-    <h2 class="title display">Work like this.</h2>
-    <ul class="inc-list work"><li>Wild Moon Organics: full rebrand to reposition an organic wellness brand in a premium market</li><li>Dr. Bee: rebrand and product photography for a BC superfood honey brand</li><li>Wise Bites: rebrand of a health-forward snack brand refreshing its identity for a new market</li></ul>
-    
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">Questions</div>
-    <h2 class="title display">Common questions.</h2>
-    <div class="svc-faq">
-      <details><summary>What’s the difference between brand strategy and brand identity?</summary><p>Strategy is the thinking: who you’re for, what you stand for and how you’re different. Identity is how that looks, including the logo, colours and typography. Strategy should come first.</p></details><details><summary>How long does brand strategy take?</summary><p>Most projects take four to eight weeks, depending on how many people I speak with and how much research is needed.</p></details><details><summary>Do I need brand strategy before a new logo?</summary><p>Usually, yes. A logo designed without a clear position tends to be a guess. With the strategy done, the design brief writes itself.</p></details><details><summary>How will we know it worked?</summary><p>We agree on what to look for up front: clearer sales conversations, better-fit enquiries, and your team describing the business the same way.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Keep reading</div>
-    <h2 class="title display">Related reading.</h2>
-    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/brand-strategy-vs-brand-identity/"><span class="tag">Brand</span><h3>Brand strategy vs brand identity</h3><p>Brand strategy is the thinking, brand identity is how it looks. Why the order matters, and what each one includes before you hire a designer.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
-  </div>
-</section>
-
-<section class="cta split on-dark" id="contact">
-  <div class="wrap">
-    <div class="split-grid">
-      <div class="split-copy">
-        <div class="label">Let’s Talk</div>
-        <h2 class="display">Tell me what you’re working on.</h2>
-        <p>Fill in the form or message me on LinkedIn. I’ll read it myself and reply with an honest take, including who else might be a better fit if it isn’t me.</p>
-        <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
-      </div>
+    <div class="lp-form" id="lead-form">
+      <h2>Book a call or send a note</h2>
+      <p>Tell me a bit about what you’re working on. I read every message myself.</p>
       <form class="contact-form reveal" id="contactForm" style="--d:160ms" novalidate>
         <input type="hidden" name="_subject" value="New Brand strategy inquiry from syedco.com">
         <input type="hidden" name="service" value="Brand strategy">
@@ -579,8 +586,134 @@
     </div>
   </div>
 </section>
-<script src="/assets/form.js" defer></script>
 
+<section class="svc-section tight" id="answer">
+  <div class="wrap">
+    <div class="quick-box"><span class="label">The short answer</span><p>Brand strategy defines who you’re for, what makes you different and how you’ll say it, so everything from your website to your sales conversations tells the same story. It’s the thinking that comes before the logo, colours and design.</p></div>
+    <nav class="toc" aria-label="On this page">
+      <a href="#fit">Who it’s for</a><a href="#solves">What it solves</a><a href="#included">What’s included</a><a href="#how">How it works</a><a href="#cost">Cost</a><a href="#mistakes">Common mistakes</a><a href="#choose">Choosing a provider</a><a href="#faq">Questions</a>
+    </nav>
+  </div>
+</section>
+
+<section class="svc-section" id="fit">
+  <div class="wrap">
+    <div class="label">Is this for you?</div>
+    <h2 class="title display">Who this is for, and who it isn’t.</h2>
+    <div class="fit-grid">
+      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’ve outgrown your brand and it no longer reflects the business</li><li>You’re entering a new market or launching a new offer</li><li>You compete on price because it’s hard to explain what makes you different</li></ul></div>
+      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You only want a new logo with no strategy behind it</li><li>You want a quick fix without input from the people who run the business</li><li>There’s no appetite to make real decisions about who you’re for</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt" id="solves">
+  <div class="wrap">
+    <div class="label">The problem</div>
+    <h2 class="title display">What this solves.</h2>
+    <div class="cards two" style="margin-top:34px">
+      <div class="card"><h3>You sound like everyone else in your category</h3><p>If a competitor could swap logos with you and nobody would notice, your brand isn’t doing its job.</p></div><div class="card"><h3>Your team describes the business five different ways</h3><p>Mixed messages inside the company become mixed messages outside it.</p></div><div class="card"><h3>Your brand hasn’t caught up with what you’ve become</h3><p>Businesses evolve faster than their branding. The gap confuses customers and undersells you.</p></div><div class="card"><h3>You compete on price</h3><p>When there’s no clear difference, price becomes the only difference people can see.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section" id="included">
+  <div class="wrap">
+    <div class="label">What’s included</div>
+    <h2 class="title display">What you get.</h2>
+    <ul class="inc-list"><li>Stakeholder and market review</li><li>Audience and competitor analysis</li><li>Positioning statement</li><li>Messaging framework with key messages and proof points</li><li>Tone of voice guidance</li><li>Brand narrative</li><li>Rollout plan across your channels</li><li>Visual identity and guidelines through trusted design partners, if needed</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="how">
+  <div class="wrap">
+    <div class="label">How it works</div>
+    <h2 class="title display">Four steps, no surprises.</h2>
+    <div class="svc-steps">
+      <div class="svc-step"><span class="n">01</span><h3>Listen</h3><p>I talk to the people who know the business best: leadership, staff, customers.</p></div><div class="svc-step"><span class="n">02</span><h3>Research</h3><p>We look at your audience and the competition to find the space only you can own.</p></div><div class="svc-step"><span class="n">03</span><h3>Position</h3><p>A clear positioning and messaging framework your whole team can use.</p></div><div class="svc-step"><span class="n">04</span><h3>Roll out</h3><p>A plan for putting the new brand to work across your site, sales conversations and marketing.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band on-dark">
+  <div class="wrap">
+    <h2 class="display">Want to see if this fits?</h2>
+    <p>A short call is the quickest way to find out. No pitch, just an honest view of what I’d do.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Experience</div>
+    <h2 class="title display">Work like this.</h2>
+    <ul class="inc-list work"><li>Wild Moon Organics: full rebrand to reposition an organic wellness brand in a premium market</li><li>Dr. Bee: rebrand and product photography for a BC superfood honey brand</li><li>Wise Bites: rebrand of a health-forward snack brand refreshing its identity for a new market</li></ul>
+    
+  </div>
+</section>
+
+<section class="svc-section alt" id="cost">
+  <div class="wrap">
+    <div class="label">Cost</div>
+    <h2 class="title display">What affects the cost.</h2>
+    <p class="sub">This is scoped to your situation, so I don’t publish fixed prices. These are the things that move it:</p>
+    <ul class="inc-list"><li>How many stakeholders and customers I need to speak with</li><li>How much market and competitor research is needed</li><li>Whether you need visual identity work as well</li><li>The number of audiences and offers to position</li><li>How much roll-out support you want</li></ul>
+    <p class="sub" style="margin-top:26px">The quickest way to get a straight number is a short call. I’ll tell you what I’d recommend and roughly what it involves before you commit to anything.</p>
+  </div>
+</section>
+
+<section class="svc-section" id="mistakes">
+  <div class="wrap">
+    <div class="label">Avoid these</div>
+    <h2 class="title display">Common mistakes.</h2>
+    <ul class="inc-list"><li>Designing a logo before deciding who the brand is for</li><li>Trying to appeal to everyone</li><li>Copying how competitors describe themselves</li><li>Keeping the strategy in a document nobody uses</li><li>Skipping conversations with customers and staff</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="choose">
+  <div class="wrap">
+    <div class="label">Hiring help</div>
+    <h2 class="title display">How to choose a provider.</h2>
+    <p class="sub">Whether you hire me or someone else, these are the signs of a good one:</p>
+    <ul class="inc-list"><li>They start with questions about your customers and market</li><li>They can explain the difference between strategy and identity</li><li>They involve your team instead of working in isolation</li><li>They show how the strategy becomes real messaging</li><li>They’re clear on what you’ll have at the end</li></ul>
+  </div>
+</section>
+
+<section class="svc-section" id="faq">
+  <div class="wrap">
+    <div class="label">Questions</div>
+    <h2 class="title display">Common questions.</h2>
+    <div class="svc-faq">
+      <details><summary>What’s the difference between brand strategy and brand identity?</summary><p>Strategy is the thinking: who you’re for, what you stand for and how you’re different. Identity is how that looks, including the logo, colours and typography. Strategy should come first.</p></details><details><summary>How long does brand strategy take?</summary><p>Most projects take four to eight weeks, depending on how many people I speak with and how much research is needed.</p></details><details><summary>Do I need brand strategy before a new logo?</summary><p>Usually, yes. A logo designed without a clear position tends to be a guess. With the strategy done, the design brief writes itself.</p></details><details><summary>How will we know it worked?</summary><p>We agree on what to look for up front: clearer sales conversations, better-fit enquiries, and your team describing the business the same way.</p></details><details><summary>What is a brand strategy?</summary><p>A brand strategy is a written plan for how your organization is positioned in the market: who it serves, what it stands for, what makes it different and how it should sound. It guides design, marketing and sales messaging.</p></details><details><summary>What is a brand positioning statement?</summary><p>A short statement that says who you serve, what you offer and why you’re the better choice. It’s the anchor for your messaging.</p></details><details><summary>When is the right time for a rebrand?</summary><p>When the business has changed, you’re entering new markets, you’re losing deals because of perception or your team can’t explain what you do consistently.</p></details><details><summary>Do small and mid-sized organizations need a brand strategy?</summary><p>Often more than large ones. A clear position helps you win without outspending bigger competitors.</p></details><details><summary>How do I get started?</summary><p>Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt">
+  <div class="wrap">
+    <div class="label">Related services</div>
+    <h2 class="title display">Often paired with.</h2>
+    <div class="cards" style="margin-top:34px"><a class="card" href="/services/website-design/"><span class="tag">Websites</span><h3>Website design</h3><p>A site that’s clear, fast and built to turn visitors into conversations.</p><span class="more">Learn more →</span></a><a class="card" href="/services/campaign-strategy/"><span class="tag">Campaigns</span><h3>Marketing campaign strategy</h3><p>Campaigns built around one goal, so your marketing builds instead of resetting.</p><span class="more">Learn more →</span></a><a class="card" href="/services/go-to-market-strategy/"><span class="tag">Go-to-market</span><h3>Go-to-market strategy</h3><p>A plan for who you’re selling to, what you’re saying and where, before launch day.</p><span class="more">Learn more →</span></a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Keep reading</div>
+    <h2 class="title display">Related reading.</h2>
+    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/brand-strategy-vs-brand-identity/"><span class="tag">Brand</span><h3>Brand strategy vs brand identity</h3><p>Brand strategy is the thinking, brand identity is how it looks. Why the order matters, and what each one includes before you hire a designer.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
+  </div>
+</section>
+
+<section class="cta-band on-dark final">
+  <div class="wrap">
+    <h2 class="display">Ready to talk it through?</h2>
+    <p>Book a call, send the form above or message me on LinkedIn. I’ll reply with an honest take, including who else might be a better fit if it isn’t me.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+<div class="sticky-cta" id="stickyCta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a></div>
+<script src="/assets/form.js" defer></script>
 </main>
 <footer>
   <div class="wrap">

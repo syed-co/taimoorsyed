@@ -378,6 +378,44 @@
   .cards.svc{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
+
+/* ---------- Landing pages ---------- */
+  .lp-hero{background:var(--dk); color:var(--dk-ink); padding:56px 0 70px;}
+  .lp-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr); gap:48px; align-items:start;}
+  @media (max-width:980px){.lp-grid{grid-template-columns:1fr; gap:36px;}}
+  .lp-copy h1{font-size:clamp(30px,4.4vw,52px); max-width:640px;}
+  .lp-copy .dek{margin-top:20px; font-size:18px; color:var(--dk-muted); max-width:580px; line-height:1.7; font-weight:500;}
+  .lp-bullets{list-style:none; margin:26px 0 0; display:grid; gap:12px; max-width:560px;}
+  .lp-bullets li{position:relative; padding-left:30px; font-weight:600; line-height:1.5;}
+  .lp-bullets li::before{content:"✓"; position:absolute; left:0; color:var(--dk-accent); font-weight:800;}
+  .lp-trust{margin-top:26px; font-size:13px; color:var(--dk-muted); font-weight:600; max-width:520px; line-height:1.6;}
+  .lp-form h2{font-family:'Archivo Black','Inter',sans-serif; text-transform:uppercase; font-size:26px; line-height:1.1; margin-bottom:8px;}
+  .lp-form > p{color:var(--dk-muted); font-size:15px; margin-bottom:18px; line-height:1.6;}
+  .svc-section.tight{padding:44px 0 10px;}
+  .quick-box{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:16px; padding:26px 30px;}
+  .quick-box .label{margin-bottom:10px;}
+  .quick-box p{font-size:19px; line-height:1.75; font-weight:500;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .toc a{border:1px solid var(--line); background:var(--card); border-radius:999px; padding:9px 16px; font-size:13px; font-weight:700; text-decoration:none; color:var(--ink); transition:border-color .2s,background .2s;}
+  .toc a:hover{border-color:var(--accent);}
+  .toc.dark a{background:transparent; border-color:var(--dk-line); color:var(--dk-ink);}
+  .toc.dark a:hover{border-color:var(--dk-accent);}
+  .cta-band{padding:76px 0;}
+  .cta-band h2{font-size:clamp(28px,4vw,46px); max-width:760px;}
+  .cta-band p{margin-top:16px; color:var(--dk-muted); font-size:18px; max-width:620px; line-height:1.7;}
+  .cta-band .svc-cta{margin-top:28px;}
+  .sticky-cta{display:none;}
+  @media (max-width:760px){
+    .sticky-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:rgba(14,14,12,0.92); backdrop-filter:blur(10px); border-top:1px solid var(--dk-line); transform:translateY(110%); transition:transform .3s;}
+    .sticky-cta.show{transform:none;}
+    .sticky-cta .btn{display:block; text-align:center; padding:15px 20px;}
+  }
+  .card.cat h3{font-size:22px; margin-bottom:8px;}
+  .card.cat h3 a{text-decoration:none;}
+  .card.cat ul{list-style:none; margin:16px 0 0;}
+  .card.cat li{margin-bottom:8px;}
+  .card.cat li a{color:var(--ink-2); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid var(--line);}
+  .card.cat li a:hover{color:var(--accent); border-color:var(--accent);}
 </style>
 </head>
 <body>
@@ -406,7 +444,7 @@
 </section>
 <section>
   <div class="wrap">
-    <div class="cards two" style="margin-top:0"><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-sales-stalled/"><span class="tag">Sales</span><h3>Why sales stalled, and where to look first</h3><p>Before you hire, discount or panic, spend 30 minutes finding where deals are actually falling off. A simple way to diagnose a sales slump.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/how-to-launch-a-product-in-canada/"><span class="tag">Launches</span><h3>How to launch a product in Canada</h3><p>A launch is not an announcement. A simple three-phase plan for launching a product in Canada that builds demand before launch day and keeps it going after.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/marketing-audit-checklist/"><span class="tag">Marketing</span><h3>A marketing audit checklist: 15 questions</h3><p>Fifteen plain questions that show whether your marketing has a clear goal, a consistent message and numbers you can trust. Do it yourself in an afternoon.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/brand-strategy-vs-brand-identity/"><span class="tag">Brand</span><h3>Brand strategy vs brand identity</h3><p>Brand strategy is the thinking, brand identity is how it looks. Why the order matters, and what each one includes before you hire a designer.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/what-affects-the-cost-of-a-website/"><span class="tag">Websites</span><h3>What affects the cost of a website</h3><p>The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/what-is-a-marketing-campaign/"><span class="tag">Campaigns</span><h3>What is a marketing campaign, and what isn’t?</h3><p>A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/how-to-plan-a-brand-video-or-photo-shoot/"><span class="tag">Video</span><h3>How to plan a brand video or photo shoot</h3><p>A practical guide to planning brand video and photography: start with the goal, build the shot list around it, prepare on the day and plan where it will live.</p><span class="more">Read the article →</span></a></div>
+    <div class="cards two" style="margin-top:0"><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-sales-stalled/"><span class="tag">Sales</span><h3>Why sales stalled, and where to look first</h3><p>Before you hire, discount or panic, spend 30 minutes finding where deals are actually falling off. A simple way to diagnose a sales slump.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/how-to-launch-a-product-in-canada/"><span class="tag">Launches</span><h3>How to launch a product in Canada</h3><p>A launch is not an announcement. A simple three-phase plan for launching a product in Canada that builds demand before launch day and keeps it going after.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/marketing-audit-checklist/"><span class="tag">Marketing</span><h3>A marketing audit checklist: 15 questions</h3><p>Fifteen plain questions that show whether your marketing has a clear goal, a consistent message and numbers you can trust. Do it yourself in an afternoon.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/brand-strategy-vs-brand-identity/"><span class="tag">Brand</span><h3>Brand strategy vs brand identity</h3><p>Brand strategy is the thinking, brand identity is how it looks. Why the order matters, and what each one includes before you hire a designer.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/what-affects-the-cost-of-a-website/"><span class="tag">Websites</span><h3>What affects the cost of a website</h3><p>The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/what-is-a-marketing-campaign/"><span class="tag">Campaigns</span><h3>What is a marketing campaign, and what isn’t?</h3><p>A marketing campaign is a coordinated plan where every tactic serves one goal and one message. Why that’s different from posting and running ads.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/how-to-plan-a-brand-video-or-photo-shoot/"><span class="tag">Video</span><h3>How to plan a brand video or photo shoot</h3><p>A practical guide to planning brand video and photography: start with the goal, build the shot list around it, prepare on the day and plan where it will live.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/seo-vs-aeo-vs-geo/"><span class="tag">Search</span><h3>SEO vs AEO vs GEO: what should you actually do?</h3><p>SEO, AEO and GEO explained in plain English, with what they have in common, where they differ and a short list of what to do first.</p><span class="more">Read the article →</span></a></div>
   </div>
 </section>
 </main>

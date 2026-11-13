@@ -22,7 +22,8 @@ The form is already wired up. It just needs your Formspree form ID.
 2. Click **New Form**, name it something like "Syed Co. contact", and set the email to `taimoor@syedco.com`.
 3. Formspree gives you a form URL that looks like `https://formspree.io/f/abcdwxyz`. Copy it.
 4. Open `assets/form.js` and replace `YOUR_FORM_ID` near the top with the ID from your URL (the part after `/f/`). That one file runs the form on every page, so there's only one place to change.
-5. Submit one test message from the live site. Formspree will email you to confirm the address the first time, so check your inbox.
+5. In the same file, set `BOOKING_URL` to your booking link (Calendly, Cal.com or a Google Calendar appointment page). Every "Book a call" button on the site then opens it. Until you do, those buttons jump to the contact form.
+6. Submit one test message from the live site. Formspree will email you to confirm the address the first time, so check your inbox.
 
 Until the ID is added, the form falls back to opening a pre-filled email, so nothing breaks in the meantime.
 
@@ -64,6 +65,15 @@ New sites usually take a few days to a few weeks to show up. Searching your own 
 3. Add a card for it to `insights/index.html` and the "Insights" section of the main `index.html`.
 4. Add the new address to `sitemap.xml` and `llms.txt`.
 5. Commit to GitHub. After it deploys, paste the new address into Google Search Console's URL Inspection and click Request indexing.
+
+## Running ads to the service pages
+
+Every service page works as a landing page: the form sits at the top, there are repeated "Book a call" buttons, and a sticky button appears on phones.
+
+- Send ad traffic to the specific page, such as `https://syedco.com/services/paid-advertising/`, so the ad and page match.
+- Add UTM tags to your ad links (for example `?utm_source=google&utm_medium=cpc&utm_campaign=seo-test`). The site saves them, along with Google and Facebook click IDs, and attaches them to the form submission so you can see which ad produced each lead.
+- After a successful submission, visitors land on `/thanks/`. Use that page as your conversion in Google Ads or Meta. The page is set to noindex so it stays out of search results.
+- The form also sends a `generate_lead` event once you add Google Tag Manager or Google Analytics.
 
 ## Adding or editing a service page
 

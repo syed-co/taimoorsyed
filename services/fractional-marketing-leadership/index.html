@@ -83,10 +83,50 @@
         },
         {
           "@type": "Question",
+          "name": "What is a fractional CMO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A part-time chief marketing officer or head of marketing. They provide senior leadership and strategy on a flexible basis, usually for a set number of hours each month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When should you hire a fractional marketing leader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "When you’ve outgrown ad hoc marketing, don’t have a senior marketer, or have people and agencies working without clear direction."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Fractional marketing leader vs agency: what’s the difference?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An agency delivers specific work. A fractional leader owns the plan and makes sure everyone, including agencies, delivers against it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a fractional marketing leader cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the time you need. It’s usually a fraction of a full-time executive salary. A short call gets you a clear estimate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Who actually does the work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part."
+            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part."
           }
         },
         {
@@ -444,6 +484,44 @@
   .cards.svc{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
+
+/* ---------- Landing pages ---------- */
+  .lp-hero{background:var(--dk); color:var(--dk-ink); padding:56px 0 70px;}
+  .lp-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr); gap:48px; align-items:start;}
+  @media (max-width:980px){.lp-grid{grid-template-columns:1fr; gap:36px;}}
+  .lp-copy h1{font-size:clamp(30px,4.4vw,52px); max-width:640px;}
+  .lp-copy .dek{margin-top:20px; font-size:18px; color:var(--dk-muted); max-width:580px; line-height:1.7; font-weight:500;}
+  .lp-bullets{list-style:none; margin:26px 0 0; display:grid; gap:12px; max-width:560px;}
+  .lp-bullets li{position:relative; padding-left:30px; font-weight:600; line-height:1.5;}
+  .lp-bullets li::before{content:"✓"; position:absolute; left:0; color:var(--dk-accent); font-weight:800;}
+  .lp-trust{margin-top:26px; font-size:13px; color:var(--dk-muted); font-weight:600; max-width:520px; line-height:1.6;}
+  .lp-form h2{font-family:'Archivo Black','Inter',sans-serif; text-transform:uppercase; font-size:26px; line-height:1.1; margin-bottom:8px;}
+  .lp-form > p{color:var(--dk-muted); font-size:15px; margin-bottom:18px; line-height:1.6;}
+  .svc-section.tight{padding:44px 0 10px;}
+  .quick-box{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:16px; padding:26px 30px;}
+  .quick-box .label{margin-bottom:10px;}
+  .quick-box p{font-size:19px; line-height:1.75; font-weight:500;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .toc a{border:1px solid var(--line); background:var(--card); border-radius:999px; padding:9px 16px; font-size:13px; font-weight:700; text-decoration:none; color:var(--ink); transition:border-color .2s,background .2s;}
+  .toc a:hover{border-color:var(--accent);}
+  .toc.dark a{background:transparent; border-color:var(--dk-line); color:var(--dk-ink);}
+  .toc.dark a:hover{border-color:var(--dk-accent);}
+  .cta-band{padding:76px 0;}
+  .cta-band h2{font-size:clamp(28px,4vw,46px); max-width:760px;}
+  .cta-band p{margin-top:16px; color:var(--dk-muted); font-size:18px; max-width:620px; line-height:1.7;}
+  .cta-band .svc-cta{margin-top:28px;}
+  .sticky-cta{display:none;}
+  @media (max-width:760px){
+    .sticky-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:rgba(14,14,12,0.92); backdrop-filter:blur(10px); border-top:1px solid var(--dk-line); transform:translateY(110%); transition:transform .3s;}
+    .sticky-cta.show{transform:none;}
+    .sticky-cta .btn{display:block; text-align:center; padding:15px 20px;}
+  }
+  .card.cat h3{font-size:22px; margin-bottom:8px;}
+  .card.cat h3 a{text-decoration:none;}
+  .card.cat ul{list-style:none; margin:16px 0 0;}
+  .card.cat li{margin-bottom:8px;}
+  .card.cat li a{color:var(--ink-2); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid var(--line);}
+  .card.cat li a:hover{color:var(--accent); border-color:var(--accent);}
 </style>
 </head>
 <body>
@@ -463,90 +541,19 @@
   </nav>
 </header>
 <main id="main">
-<section class="article-hero svc-hero">
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / Fractional marketing leadership</div>
-    <h1 class="display">Fractional marketing leadership for organizations that need direction</h1>
-    <p class="dek">Senior marketing thinking without a full-time salary. I set the strategy, manage the plan and keep your team and agencies pointed at the same goal.</p>
-    <div class="svc-cta"><a class="btn btn-light" href="#contact">Start a conversation</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Is this for you?</div>
-    <h2 class="title display">Who this is for, and who it isn’t.</h2>
-    <div class="fit-grid">
-      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’re growing but don’t have a senior marketing leader</li><li>You have people or agencies doing the work with no one setting direction</li><li>You’re between hires and need steady leadership in the meantime</li></ul></div>
-      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You want someone to do hands-on design, posting or editing every day</li><li>You’re looking for a full-time presence in the office</li><li>There’s nobody on your side to carry out the plan (we’d need to solve that first)</li></ul></div>
+<section class="lp-hero" id="top">
+  <div class="wrap lp-grid">
+    <div class="lp-copy">
+      <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / <a href="/services/#cat-strategy">Strategy &amp; Leadership</a></div>
+      <h1 class="display">Fractional marketing leadership for organizations that need direction</h1>
+      <p class="dek">Senior marketing thinking without a full-time salary. I set the strategy, manage the plan and keep your team and agencies pointed at the same goal.</p>
+      <ul class="lp-bullets"><li>Senior strategy and direction without a full-time salary</li><li>Your team and agencies working to one plan</li><li>Flexible hours that fit what you actually need</li></ul>
+      <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+      <p class="lp-trust">Experience with organizations including Startup Canada, League of Innovators and BC Food &amp; Beverage.</p>
     </div>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">The problem</div>
-    <h2 class="title display">What this solves.</h2>
-    <div class="cards two" style="margin-top:34px">
-      <div class="card"><h3>Activity without direction</h3><p>Plenty of work gets done, but nobody has decided what it’s all for.</p></div><div class="card"><h3>Agencies and freelancers pulling in different directions</h3><p>Without one person setting the brief, each partner optimizes for their own piece.</p></div><div class="card"><h3>The budget has no plan behind it</h3><p>Money gets spent where the loudest voice is, not where it will do the most.</p></div><div class="card"><h3>A full-time hire is too big a step</h3><p>A senior hire is a major commitment. A fractional lead lets you test what you need first.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">What’s included</div>
-    <h2 class="title display">What you get.</h2>
-    <ul class="inc-list"><li>Marketing strategy and annual plan</li><li>Budget allocation and tracking</li><li>Selecting and managing agencies and freelancers</li><li>Coaching for your internal team</li><li>Campaign oversight</li><li>Reporting on the numbers that matter</li><li>Leadership and board updates</li><li>A regular working rhythm, set at the start</li></ul>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">How it works</div>
-    <h2 class="title display">Four steps, no surprises.</h2>
-    <div class="svc-steps">
-      <div class="svc-step"><span class="n">01</span><h3>Get oriented</h3><p>I learn the business, the team, the goals and what’s already running.</p></div><div class="svc-step"><span class="n">02</span><h3>Set the plan</h3><p>A clear strategy and 90-day priorities everyone works from.</p></div><div class="svc-step"><span class="n">03</span><h3>Lead the work</h3><p>Regular check-ins, briefs, reviews and decisions so work keeps moving in one direction.</p></div><div class="svc-step"><span class="n">04</span><h3>Review and adjust</h3><p>Monthly reviews of results, with changes to the plan as you learn.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Experience</div>
-    <h2 class="title display">Work like this.</h2>
-    <ul class="inc-list work"><li>BC Food &amp; Beverage Growth Hub Accelerator: marketing education delivered province-wide as a subject matter expert</li></ul>
-    
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">Questions</div>
-    <h2 class="title display">Common questions.</h2>
-    <div class="svc-faq">
-      <details><summary>How many hours a month is a typical arrangement?</summary><p>It depends on the size of the team and how much needs doing. We agree a set number of hours or a regular rhythm at the start and revisit it as needs change.</p></details><details><summary>How is this different from hiring a consultant or an agency?</summary><p>An agency executes. A consultant advises. A fractional leader does both on a part-time basis: owning the plan, managing the people and being accountable for the result.</p></details><details><summary>Can you work with our existing agency or team?</summary><p>Yes, that’s often the best use of it. I make sure the people you already pay are working to the same goal.</p></details><details><summary>How do we stop if it isn’t working?</summary><p>Arrangements are flexible and reviewed regularly, so either side can adjust or end them without drama.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Keep reading</div>
-    <h2 class="title display">Related reading.</h2>
-    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
-  </div>
-</section>
-
-<section class="cta split on-dark" id="contact">
-  <div class="wrap">
-    <div class="split-grid">
-      <div class="split-copy">
-        <div class="label">Let’s Talk</div>
-        <h2 class="display">Tell me what you’re working on.</h2>
-        <p>Fill in the form or message me on LinkedIn. I’ll read it myself and reply with an honest take, including who else might be a better fit if it isn’t me.</p>
-        <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
-      </div>
+    <div class="lp-form" id="lead-form">
+      <h2>Book a call or send a note</h2>
+      <p>Tell me a bit about what you’re working on. I read every message myself.</p>
       <form class="contact-form reveal" id="contactForm" style="--d:160ms" novalidate>
         <input type="hidden" name="_subject" value="New Fractional marketing leadership inquiry from syedco.com">
         <input type="hidden" name="service" value="Fractional marketing leadership">
@@ -579,8 +586,134 @@
     </div>
   </div>
 </section>
-<script src="/assets/form.js" defer></script>
 
+<section class="svc-section tight" id="answer">
+  <div class="wrap">
+    <div class="quick-box"><span class="label">The short answer</span><p>Fractional marketing leadership means hiring an experienced marketing leader part-time. They set strategy, manage the budget and keep your team and partners working toward one goal, without the cost of a full-time executive.</p></div>
+    <nav class="toc" aria-label="On this page">
+      <a href="#fit">Who it’s for</a><a href="#solves">What it solves</a><a href="#included">What’s included</a><a href="#how">How it works</a><a href="#cost">Cost</a><a href="#mistakes">Common mistakes</a><a href="#choose">Choosing a provider</a><a href="#faq">Questions</a>
+    </nav>
+  </div>
+</section>
+
+<section class="svc-section" id="fit">
+  <div class="wrap">
+    <div class="label">Is this for you?</div>
+    <h2 class="title display">Who this is for, and who it isn’t.</h2>
+    <div class="fit-grid">
+      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>You’re growing but don’t have a senior marketing leader</li><li>You have people or agencies doing the work with no one setting direction</li><li>You’re between hires and need steady leadership in the meantime</li></ul></div>
+      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You want someone to do hands-on design, posting or editing every day</li><li>You’re looking for a full-time presence in the office</li><li>There’s nobody on your side to carry out the plan (we’d need to solve that first)</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt" id="solves">
+  <div class="wrap">
+    <div class="label">The problem</div>
+    <h2 class="title display">What this solves.</h2>
+    <div class="cards two" style="margin-top:34px">
+      <div class="card"><h3>Activity without direction</h3><p>Plenty of work gets done, but nobody has decided what it’s all for.</p></div><div class="card"><h3>Agencies and freelancers pulling in different directions</h3><p>Without one person setting the brief, each partner optimizes for their own piece.</p></div><div class="card"><h3>The budget has no plan behind it</h3><p>Money gets spent where the loudest voice is, not where it will do the most.</p></div><div class="card"><h3>A full-time hire is too big a step</h3><p>A senior hire is a major commitment. A fractional lead lets you test what you need first.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section" id="included">
+  <div class="wrap">
+    <div class="label">What’s included</div>
+    <h2 class="title display">What you get.</h2>
+    <ul class="inc-list"><li>Marketing strategy and annual plan</li><li>Budget allocation and tracking</li><li>Selecting and managing agencies and freelancers</li><li>Coaching for your internal team</li><li>Campaign oversight</li><li>Reporting on the numbers that matter</li><li>Leadership and board updates</li><li>A regular working rhythm, set at the start</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="how">
+  <div class="wrap">
+    <div class="label">How it works</div>
+    <h2 class="title display">Four steps, no surprises.</h2>
+    <div class="svc-steps">
+      <div class="svc-step"><span class="n">01</span><h3>Get oriented</h3><p>I learn the business, the team, the goals and what’s already running.</p></div><div class="svc-step"><span class="n">02</span><h3>Set the plan</h3><p>A clear strategy and 90-day priorities everyone works from.</p></div><div class="svc-step"><span class="n">03</span><h3>Lead the work</h3><p>Regular check-ins, briefs, reviews and decisions so work keeps moving in one direction.</p></div><div class="svc-step"><span class="n">04</span><h3>Review and adjust</h3><p>Monthly reviews of results, with changes to the plan as you learn.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band on-dark">
+  <div class="wrap">
+    <h2 class="display">Want to see if this fits?</h2>
+    <p>A short call is the quickest way to find out. No pitch, just an honest view of what I’d do.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Experience</div>
+    <h2 class="title display">Work like this.</h2>
+    <ul class="inc-list work"><li>BC Food &amp; Beverage Growth Hub Accelerator: marketing education delivered province-wide as a subject matter expert</li></ul>
+    
+  </div>
+</section>
+
+<section class="svc-section alt" id="cost">
+  <div class="wrap">
+    <div class="label">Cost</div>
+    <h2 class="title display">What affects the cost.</h2>
+    <p class="sub">This is scoped to your situation, so I don’t publish fixed prices. These are the things that move it:</p>
+    <ul class="inc-list"><li>How many hours or days a month you need</li><li>The size of your team and number of partners to manage</li><li>How hands-on the role needs to be</li><li>How much strategy work comes first</li><li>The length of the arrangement</li></ul>
+    <p class="sub" style="margin-top:26px">The quickest way to get a straight number is a short call. I’ll tell you what I’d recommend and roughly what it involves before you commit to anything.</p>
+  </div>
+</section>
+
+<section class="svc-section" id="mistakes">
+  <div class="wrap">
+    <div class="label">Avoid these</div>
+    <h2 class="title display">Common mistakes.</h2>
+    <ul class="inc-list"><li>Hiring execution help before anyone sets direction</li><li>Expecting a fractional lead to do all the hands-on work</li><li>Giving them no authority to make decisions</li><li>Not agreeing on goals and a rhythm at the start</li><li>Treating it as permanent instead of reviewing it regularly</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="choose">
+  <div class="wrap">
+    <div class="label">Hiring help</div>
+    <h2 class="title display">How to choose a provider.</h2>
+    <p class="sub">Whether you hire me or someone else, these are the signs of a good one:</p>
+    <ul class="inc-list"><li>They’ve led marketing for organizations like yours</li><li>They’re clear on what they will and won’t do hands-on</li><li>They ask how decisions get made on your side</li><li>They propose a regular rhythm and reporting</li><li>They’re comfortable working alongside your existing partners</li></ul>
+  </div>
+</section>
+
+<section class="svc-section" id="faq">
+  <div class="wrap">
+    <div class="label">Questions</div>
+    <h2 class="title display">Common questions.</h2>
+    <div class="svc-faq">
+      <details><summary>How many hours a month is a typical arrangement?</summary><p>It depends on the size of the team and how much needs doing. We agree a set number of hours or a regular rhythm at the start and revisit it as needs change.</p></details><details><summary>How is this different from hiring a consultant or an agency?</summary><p>An agency executes. A consultant advises. A fractional leader does both on a part-time basis: owning the plan, managing the people and being accountable for the result.</p></details><details><summary>Can you work with our existing agency or team?</summary><p>Yes, that’s often the best use of it. I make sure the people you already pay are working to the same goal.</p></details><details><summary>How do we stop if it isn’t working?</summary><p>Arrangements are flexible and reviewed regularly, so either side can adjust or end them without drama.</p></details><details><summary>What is a fractional CMO?</summary><p>A part-time chief marketing officer or head of marketing. They provide senior leadership and strategy on a flexible basis, usually for a set number of hours each month.</p></details><details><summary>When should you hire a fractional marketing leader?</summary><p>When you’ve outgrown ad hoc marketing, don’t have a senior marketer, or have people and agencies working without clear direction.</p></details><details><summary>Fractional marketing leader vs agency: what’s the difference?</summary><p>An agency delivers specific work. A fractional leader owns the plan and makes sure everyone, including agencies, delivers against it.</p></details><details><summary>How much does a fractional marketing leader cost?</summary><p>It depends on the time you need. It’s usually a fraction of a full-time executive salary. A short call gets you a clear estimate.</p></details><details><summary>How do I get started?</summary><p>Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt">
+  <div class="wrap">
+    <div class="label">Related services</div>
+    <h2 class="title display">Often paired with.</h2>
+    <div class="cards" style="margin-top:34px"><a class="card" href="/services/marketing-audit/"><span class="tag">Audit</span><h3>Marketing audit</h3><p>A fast, honest review of what’s working, what isn’t and what to do next.</p><span class="more">Learn more →</span></a><a class="card" href="/services/campaign-strategy/"><span class="tag">Campaigns</span><h3>Marketing campaign strategy</h3><p>Campaigns built around one goal, so your marketing builds instead of resetting.</p><span class="more">Learn more →</span></a><a class="card" href="/services/sales-process-setup/"><span class="tag">Sales process</span><h3>Sales process setup</h3><p>A simple, repeatable way to win customers that your team can follow.</p><span class="more">Learn more →</span></a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Keep reading</div>
+    <h2 class="title display">Related reading.</h2>
+    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/agency-freelancer-in-house-or-fractional/"><span class="tag">Hiring</span><h3>Agency, freelancer, in-house or fractional?</h3><p>There’s no best option for marketing or sales help, only the right one for your problem, budget and time. How to choose, what to ask and what to avoid.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
+  </div>
+</section>
+
+<section class="cta-band on-dark final">
+  <div class="wrap">
+    <h2 class="display">Ready to talk it through?</h2>
+    <p>Book a call, send the form above or message me on LinkedIn. I’ll reply with an honest take, including who else might be a better fit if it isn’t me.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+<div class="sticky-cta" id="stickyCta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a></div>
+<script src="/assets/form.js" defer></script>
 </main>
 <footer>
   <div class="wrap">

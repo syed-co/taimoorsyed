@@ -83,10 +83,50 @@
         },
         {
           "@type": "Question",
+          "name": "How much does a website cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the number of pages, how much content needs creating, how custom the design is and what features you need. I don’t publish fixed prices because projects vary a lot. A short call gets you a straight estimate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should a business website include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "At minimum: a clear explanation of what you do and who it’s for, proof that you’re credible, an obvious way to contact you and pages answering the questions buyers actually ask."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will my new website show up in Google and AI search?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A new site doesn’t rank automatically, but I build the foundations in from the start: clear structure, fast loading, descriptive page titles and structured data. Visibility after that depends on content and links over time."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Should I use WordPress, Webflow, Squarespace or something custom?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The right platform depends on who will maintain the site, what it needs to do and your budget. I recommend based on those, not on a favourite tool."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I get started?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Who actually does the work?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part."
+            "text": "I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part."
           }
         },
         {
@@ -444,6 +484,44 @@
   .cards.svc{grid-template-columns:repeat(4,1fr);}
   @media (max-width:1100px){.cards.svc{grid-template-columns:repeat(2,1fr);}}
   @media (max-width:620px){.cards.svc{grid-template-columns:1fr;}}
+
+/* ---------- Landing pages ---------- */
+  .lp-hero{background:var(--dk); color:var(--dk-ink); padding:56px 0 70px;}
+  .lp-grid{display:grid; grid-template-columns:minmax(0,1.05fr) minmax(0,0.95fr); gap:48px; align-items:start;}
+  @media (max-width:980px){.lp-grid{grid-template-columns:1fr; gap:36px;}}
+  .lp-copy h1{font-size:clamp(30px,4.4vw,52px); max-width:640px;}
+  .lp-copy .dek{margin-top:20px; font-size:18px; color:var(--dk-muted); max-width:580px; line-height:1.7; font-weight:500;}
+  .lp-bullets{list-style:none; margin:26px 0 0; display:grid; gap:12px; max-width:560px;}
+  .lp-bullets li{position:relative; padding-left:30px; font-weight:600; line-height:1.5;}
+  .lp-bullets li::before{content:"✓"; position:absolute; left:0; color:var(--dk-accent); font-weight:800;}
+  .lp-trust{margin-top:26px; font-size:13px; color:var(--dk-muted); font-weight:600; max-width:520px; line-height:1.6;}
+  .lp-form h2{font-family:'Archivo Black','Inter',sans-serif; text-transform:uppercase; font-size:26px; line-height:1.1; margin-bottom:8px;}
+  .lp-form > p{color:var(--dk-muted); font-size:15px; margin-bottom:18px; line-height:1.6;}
+  .svc-section.tight{padding:44px 0 10px;}
+  .quick-box{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:16px; padding:26px 30px;}
+  .quick-box .label{margin-bottom:10px;}
+  .quick-box p{font-size:19px; line-height:1.75; font-weight:500;}
+  .toc{display:flex; flex-wrap:wrap; gap:10px; margin-top:24px;}
+  .toc a{border:1px solid var(--line); background:var(--card); border-radius:999px; padding:9px 16px; font-size:13px; font-weight:700; text-decoration:none; color:var(--ink); transition:border-color .2s,background .2s;}
+  .toc a:hover{border-color:var(--accent);}
+  .toc.dark a{background:transparent; border-color:var(--dk-line); color:var(--dk-ink);}
+  .toc.dark a:hover{border-color:var(--dk-accent);}
+  .cta-band{padding:76px 0;}
+  .cta-band h2{font-size:clamp(28px,4vw,46px); max-width:760px;}
+  .cta-band p{margin-top:16px; color:var(--dk-muted); font-size:18px; max-width:620px; line-height:1.7;}
+  .cta-band .svc-cta{margin-top:28px;}
+  .sticky-cta{display:none;}
+  @media (max-width:760px){
+    .sticky-cta{display:block; position:fixed; left:0; right:0; bottom:0; z-index:60; padding:12px 16px calc(12px + env(safe-area-inset-bottom,0px)); background:rgba(14,14,12,0.92); backdrop-filter:blur(10px); border-top:1px solid var(--dk-line); transform:translateY(110%); transition:transform .3s;}
+    .sticky-cta.show{transform:none;}
+    .sticky-cta .btn{display:block; text-align:center; padding:15px 20px;}
+  }
+  .card.cat h3{font-size:22px; margin-bottom:8px;}
+  .card.cat h3 a{text-decoration:none;}
+  .card.cat ul{list-style:none; margin:16px 0 0;}
+  .card.cat li{margin-bottom:8px;}
+  .card.cat li a{color:var(--ink-2); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid var(--line);}
+  .card.cat li a:hover{color:var(--accent); border-color:var(--accent);}
 </style>
 </head>
 <body>
@@ -463,90 +541,19 @@
   </nav>
 </header>
 <main id="main">
-<section class="article-hero svc-hero">
-  <div class="wrap">
-    <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / Website design</div>
-    <h1 class="display">Website design that turns visitors into conversations</h1>
-    <p class="dek">Your website should be your hardest-working salesperson. I help Canadian organizations plan, design and launch sites that are clear, fast and built to convert.</p>
-    <div class="svc-cta"><a class="btn btn-light" href="#contact">Start a conversation</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Is this for you?</div>
-    <h2 class="title display">Who this is for, and who it isn’t.</h2>
-    <div class="fit-grid">
-      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>Your site no longer matches the business you’ve become</li><li>You’re launching, rebranding or sending campaign traffic to a site that doesn’t convert</li><li>You want a site your team can actually update and improve</li></ul></div>
-      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You want the lowest-cost template and nothing else</li><li>You’d like to skip strategy and jump straight to design</li><li>Nobody on your side can approve content and decisions</li></ul></div>
+<section class="lp-hero" id="top">
+  <div class="wrap lp-grid">
+    <div class="lp-copy">
+      <div class="crumbs"><a href="/">Home</a> / <a href="/services/">Services</a> / <a href="/services/#cat-brand">Brand &amp; Web</a></div>
+      <h1 class="display">Website design that turns visitors into conversations</h1>
+      <p class="dek">Your website should be your hardest-working salesperson. I help Canadian organizations plan, design and launch sites that are clear, fast and built to convert.</p>
+      <ul class="lp-bullets"><li>Built around what visitors need to do, not just how it looks</li><li>Fast, mobile-first and easy for your team to update</li><li>Planned so it can be found in search and in AI answers</li></ul>
+      <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+      <p class="lp-trust">Experience with organizations including Startup Canada, League of Innovators and BC Food &amp; Beverage.</p>
     </div>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">The problem</div>
-    <h2 class="title display">What this solves.</h2>
-    <div class="cards two" style="margin-top:34px">
-      <div class="card"><h3>It looks dated or says the wrong thing</h3><p>Visitors judge you in seconds. If the site doesn’t match the quality of the work, you lose people before they read a word.</p></div><div class="card"><h3>People leave without doing anything</h3><p>Traffic isn’t the problem if nobody calls, books or fills in the form. The page structure and message usually are.</p></div><div class="card"><h3>It’s slow, hard to update or hard to find</h3><p>A heavy site frustrates visitors and search engines alike, and a site only one person can edit stops improving.</p></div><div class="card"><h3>Nobody owns it</h3><p>Websites decay without an owner. A clear plan for who updates what keeps it useful long after launch.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">What’s included</div>
-    <h2 class="title display">What you get.</h2>
-    <ul class="inc-list"><li>Goals and audience review</li><li>Site structure and messaging</li><li>Custom design that matches your brand</li><li>Mobile-first development</li><li>Page speed and search-friendly structure</li><li>Contact forms and lead tracking</li><li>Analytics setup</li><li>Launch, handover and training</li></ul>
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">How it works</div>
-    <h2 class="title display">Four steps, no surprises.</h2>
-    <div class="svc-steps">
-      <div class="svc-step"><span class="n">01</span><h3>Discovery</h3><p>We agree what the site needs to do, who it’s for and what visitors need to find.</p></div><div class="svc-step"><span class="n">02</span><h3>Structure and message</h3><p>Sitemap, page layouts and copy direction, so design starts from a plan instead of a blank page.</p></div><div class="svc-step"><span class="n">03</span><h3>Design and build</h3><p>Custom design and development, with review rounds so nothing surprises you at launch.</p></div><div class="svc-step"><span class="n">04</span><h3>Launch and learn</h3><p>Testing, go-live, tracking in place and a first round of improvements based on real visitors.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Experience</div>
-    <h2 class="title display">Work like this.</h2>
-    <ul class="inc-list work"><li>ViviGro: brand and website work for a BC soil health and fertilizer company</li></ul>
-    
-  </div>
-</section>
-
-<section class="svc-section alt">
-  <div class="wrap">
-    <div class="label">Questions</div>
-    <h2 class="title display">Common questions.</h2>
-    <div class="svc-faq">
-      <details><summary>How long does a website take?</summary><p>Most projects land somewhere between 4 and 10 weeks, depending on size and how quickly feedback and content come in. Late content is the most common cause of delays, so we plan for it up front.</p></details><details><summary>Do I need a new website, or can the current one be fixed?</summary><p>Sometimes a few changes to structure, copy and speed do more than a rebuild. I’ll tell you honestly which one your site needs after a quick review.</p></details><details><summary>Who writes the content?</summary><p>It depends on the project. I can lead messaging and copy direction, you can supply it, or we split it. Good content matters more than good design, so it gets planned early.</p></details><details><summary>Will I be able to update the site myself?</summary><p>Yes, that’s part of the plan. I choose the platform based on who’ll maintain the site, and I train your team before handover.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or illustration, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
-    </div>
-  </div>
-</section>
-
-<section class="svc-section">
-  <div class="wrap">
-    <div class="label">Keep reading</div>
-    <h2 class="title display">Related reading.</h2>
-    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/what-affects-the-cost-of-a-website/"><span class="tag">Websites</span><h3>What affects the cost of a website</h3><p>The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
-  </div>
-</section>
-
-<section class="cta split on-dark" id="contact">
-  <div class="wrap">
-    <div class="split-grid">
-      <div class="split-copy">
-        <div class="label">Let’s Talk</div>
-        <h2 class="display">Tell me what you’re working on.</h2>
-        <p>Fill in the form or message me on LinkedIn. I’ll read it myself and reply with an honest take, including who else might be a better fit if it isn’t me.</p>
-        <a class="btn btn-light" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Connect on LinkedIn →</a>
-      </div>
+    <div class="lp-form" id="lead-form">
+      <h2>Book a call or send a note</h2>
+      <p>Tell me a bit about what you’re working on. I read every message myself.</p>
       <form class="contact-form reveal" id="contactForm" style="--d:160ms" novalidate>
         <input type="hidden" name="_subject" value="New Website design inquiry from syedco.com">
         <input type="hidden" name="service" value="Website design">
@@ -579,8 +586,134 @@
     </div>
   </div>
 </section>
-<script src="/assets/form.js" defer></script>
 
+<section class="svc-section tight" id="answer">
+  <div class="wrap">
+    <div class="quick-box"><span class="label">The short answer</span><p>Website design is the planning, design and build of the site your customers use to learn about you and take action. A good one has a clear structure, a clear message and a clear next step on every page, and loads quickly on a phone.</p></div>
+    <nav class="toc" aria-label="On this page">
+      <a href="#fit">Who it’s for</a><a href="#solves">What it solves</a><a href="#included">What’s included</a><a href="#how">How it works</a><a href="#cost">Cost</a><a href="#mistakes">Common mistakes</a><a href="#choose">Choosing a provider</a><a href="#faq">Questions</a>
+    </nav>
+  </div>
+</section>
+
+<section class="svc-section" id="fit">
+  <div class="wrap">
+    <div class="label">Is this for you?</div>
+    <h2 class="title display">Who this is for, and who it isn’t.</h2>
+    <div class="fit-grid">
+      <div class="fit-card yes"><h3>A good fit if</h3><ul><li>Your site no longer matches the business you’ve become</li><li>You’re launching, rebranding or sending campaign traffic to a site that doesn’t convert</li><li>You want a site your team can actually update and improve</li></ul></div>
+      <div class="fit-card no"><h3>Probably not if</h3><ul><li>You want the lowest-cost template and nothing else</li><li>You’d like to skip strategy and jump straight to design</li><li>Nobody on your side can approve content and decisions</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt" id="solves">
+  <div class="wrap">
+    <div class="label">The problem</div>
+    <h2 class="title display">What this solves.</h2>
+    <div class="cards two" style="margin-top:34px">
+      <div class="card"><h3>It looks dated or says the wrong thing</h3><p>Visitors judge you in seconds. If the site doesn’t match the quality of the work, you lose people before they read a word.</p></div><div class="card"><h3>People leave without doing anything</h3><p>Traffic isn’t the problem if nobody calls, books or fills in the form. The page structure and message usually are.</p></div><div class="card"><h3>It’s slow, hard to update or hard to find</h3><p>A heavy site frustrates visitors and search engines alike, and a site only one person can edit stops improving.</p></div><div class="card"><h3>Nobody owns it</h3><p>Websites decay without an owner. A clear plan for who updates what keeps it useful long after launch.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section" id="included">
+  <div class="wrap">
+    <div class="label">What’s included</div>
+    <h2 class="title display">What you get.</h2>
+    <ul class="inc-list"><li>Goals and audience review</li><li>Site structure and messaging</li><li>Custom design that matches your brand</li><li>Mobile-first development</li><li>Page speed and search-friendly structure</li><li>Contact forms and lead tracking</li><li>Analytics setup</li><li>Launch, handover and training</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="how">
+  <div class="wrap">
+    <div class="label">How it works</div>
+    <h2 class="title display">Four steps, no surprises.</h2>
+    <div class="svc-steps">
+      <div class="svc-step"><span class="n">01</span><h3>Discovery</h3><p>We agree what the site needs to do, who it’s for and what visitors need to find.</p></div><div class="svc-step"><span class="n">02</span><h3>Structure and message</h3><p>Sitemap, page layouts and copy direction, so design starts from a plan instead of a blank page.</p></div><div class="svc-step"><span class="n">03</span><h3>Design and build</h3><p>Custom design and development, with review rounds so nothing surprises you at launch.</p></div><div class="svc-step"><span class="n">04</span><h3>Launch and learn</h3><p>Testing, go-live, tracking in place and a first round of improvements based on real visitors.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band on-dark">
+  <div class="wrap">
+    <h2 class="display">Want to see if this fits?</h2>
+    <p>A short call is the quickest way to find out. No pitch, just an honest view of what I’d do.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Experience</div>
+    <h2 class="title display">Work like this.</h2>
+    <ul class="inc-list work"><li>ViviGro: brand and website work for a BC soil health and fertilizer company</li></ul>
+    
+  </div>
+</section>
+
+<section class="svc-section alt" id="cost">
+  <div class="wrap">
+    <div class="label">Cost</div>
+    <h2 class="title display">What affects the cost.</h2>
+    <p class="sub">This is scoped to your situation, so I don’t publish fixed prices. These are the things that move it:</p>
+    <ul class="inc-list"><li>Number of pages and how complex the structure is</li><li>Whether content and photography are supplied or created</li><li>Custom design versus a flexible template</li><li>Features such as booking, payments, member logins or integrations</li><li>Ongoing hosting, updates and support after launch</li></ul>
+    <p class="sub" style="margin-top:26px">The quickest way to get a straight number is a short call. I’ll tell you what I’d recommend and roughly what it involves before you commit to anything.</p>
+  </div>
+</section>
+
+<section class="svc-section" id="mistakes">
+  <div class="wrap">
+    <div class="label">Avoid these</div>
+    <h2 class="title display">Common mistakes.</h2>
+    <ul class="inc-list"><li>Starting with design before deciding what the site must achieve</li><li>Writing content last, then squeezing it into a finished layout</li><li>Packing the homepage with everything instead of the one thing visitors need</li><li>Skipping mobile testing, speed and basic search setup</li><li>Launching without anyone owning the site afterward</li></ul>
+  </div>
+</section>
+
+<section class="svc-section alt" id="choose">
+  <div class="wrap">
+    <div class="label">Hiring help</div>
+    <h2 class="title display">How to choose a provider.</h2>
+    <p class="sub">Whether you hire me or someone else, these are the signs of a good one:</p>
+    <ul class="inc-list"><li>They ask about your goals and customers before talking about design</li><li>They show how you’ll update the site yourself</li><li>They explain who owns the site and the content</li><li>They talk about speed, mobile and search from the start</li><li>They give a clear scope, timeline and list of what’s not included</li></ul>
+  </div>
+</section>
+
+<section class="svc-section" id="faq">
+  <div class="wrap">
+    <div class="label">Questions</div>
+    <h2 class="title display">Common questions.</h2>
+    <div class="svc-faq">
+      <details><summary>How long does a website take?</summary><p>Most projects land somewhere between 4 and 10 weeks, depending on size and how quickly feedback and content come in. Late content is the most common cause of delays, so we plan for it up front.</p></details><details><summary>Do I need a new website, or can the current one be fixed?</summary><p>Sometimes a few changes to structure, copy and speed do more than a rebuild. I’ll tell you honestly which one your site needs after a quick review.</p></details><details><summary>Who writes the content?</summary><p>It depends on the project. I can lead messaging and copy direction, you can supply it, or we split it. Good content matters more than good design, so it gets planned early.</p></details><details><summary>Will I be able to update the site myself?</summary><p>Yes, that’s part of the plan. I choose the platform based on who’ll maintain the site, and I train your team before handover.</p></details><details><summary>How much does a website cost?</summary><p>It depends on the number of pages, how much content needs creating, how custom the design is and what features you need. I don’t publish fixed prices because projects vary a lot. A short call gets you a straight estimate.</p></details><details><summary>What should a business website include?</summary><p>At minimum: a clear explanation of what you do and who it’s for, proof that you’re credible, an obvious way to contact you and pages answering the questions buyers actually ask.</p></details><details><summary>Will my new website show up in Google and AI search?</summary><p>A new site doesn’t rank automatically, but I build the foundations in from the start: clear structure, fast loading, descriptive page titles and structured data. Visibility after that depends on content and links over time.</p></details><details><summary>Should I use WordPress, Webflow, Squarespace or something custom?</summary><p>The right platform depends on who will maintain the site, what it needs to do and your budget. I recommend based on those, not on a favourite tool.</p></details><details><summary>How do I get started?</summary><p>Book a call or send the short form. I’ll read what you share, then we talk for a short call to see whether and how I can help. If I’m not the right fit, I’ll point you to someone who is.</p></details><details><summary>Who actually does the work?</summary><p>I lead every project and stay close to the work. For specialist pieces like filming, development or design, I bring in people I trust, so you get the right skill for each part.</p></details><details><summary>Do you work with organizations outside Vancouver?</summary><p>Yes. I’m based in Vancouver, BC, and work with organizations across Canada, mostly remotely.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="svc-section alt">
+  <div class="wrap">
+    <div class="label">Related services</div>
+    <h2 class="title display">Often paired with.</h2>
+    <div class="cards" style="margin-top:34px"><a class="card" href="/services/seo-aeo-geo-ai-search-visibility/"><span class="tag">SEO &amp; AI search</span><h3>SEO, AEO and GEO (AI search visibility)</h3><p>Get found in Google and in the answers AI tools give.</p><span class="more">Learn more →</span></a><a class="card" href="/services/brand-strategy/"><span class="tag">Brand</span><h3>Brand strategy</h3><p>Positioning and messaging that make you the obvious choice.</p><span class="more">Learn more →</span></a><a class="card" href="/services/content-marketing/"><span class="tag">Content</span><h3>Content marketing and thought leadership</h3><p>Articles, guides and thought leadership that earn trust and bring in leads.</p><span class="more">Learn more →</span></a></div>
+  </div>
+</section>
+
+<section class="svc-section">
+  <div class="wrap">
+    <div class="label">Keep reading</div>
+    <h2 class="title display">Related reading.</h2>
+    <div class="cards two" style="margin-top:34px"><a class="card" href="/insights/what-affects-the-cost-of-a-website/"><span class="tag">Websites</span><h3>What affects the cost of a website</h3><p>The real factors behind website cost for organizations in Canada: scope, content, features, integrations and ongoing care, and how to budget sensibly.</p><span class="more">Read the article →</span></a><a class="card" href="/insights/why-your-marketing-isnt-working/"><span class="tag">Marketing</span><h3>Why your marketing isn’t working</h3><p>It’s rarely the budget or the platform. Three things to check first when your marketing isn’t delivering, and a simple plan to fix it.</p><span class="more">Read the article →</span></a></div>
+  </div>
+</section>
+
+<section class="cta-band on-dark final">
+  <div class="wrap">
+    <h2 class="display">Ready to talk it through?</h2>
+    <p>Book a call, send the form above or message me on LinkedIn. I’ll reply with an honest take, including who else might be a better fit if it isn’t me.</p>
+    <div class="svc-cta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a><a class="btn btn-line" href="https://www.linkedin.com/in/taimoor-syed-077032253/" target="_blank" rel="noopener">Message me on LinkedIn</a></div>
+  </div>
+</section>
+<div class="sticky-cta" id="stickyCta"><a class="btn btn-light" data-book href="#lead-form">Book a call</a></div>
+<script src="/assets/form.js" defer></script>
 </main>
 <footer>
   <div class="wrap">
